@@ -1,6 +1,14 @@
 # 📜 Astrocosmos License Summary
 
-## ⚛️ Technical Assets (Code, Scripts, Templates)
+Astrocosmos is licensed under:
+- ✨ [MIT License](./LICENSE.md) for all **technical assets** within the Astrocosmos project.
+- 🌌 [Creative Commons BY-NC-SA 4.0](./LICENSE.md) for all **creative content** within the Astrocosmos project.
+
+---
+
+## ⚛️ Technical Assets
+
+> Technical assets are, but not exclusively limited to, source code, scripts, spreadsheets, templates, data files, configuration files, and other tools or utilities used to support the Astrocosmos project's structure, analysis, or visualization.
 
 Licensed under the **MIT License**  
 
@@ -26,13 +34,13 @@ SOFTWARE.
 
 ---
 
-## 🌌 Creative Content (Worldbuilding, Lore, Names, Species)
+## 🌌 Creative Content
+
+> Creative contents are, but not exclusively limited to, worldbuilding documents, lore descriptions, planetary naming systems, species designs, cultural frameworks, philosophical narratives, visual art, and any other imaginative expressions that define the Astrocosmos universe.
 
 Licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)**  
 
 To view a copy of this license, visit [creativecommons.org/licenses/by-nc-sa/4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
----
 
 ### Summary
 
@@ -61,11 +69,11 @@ If you use or adapt content from Astrocosmos, please include the following attri
 
 ---
 
-## Notes
+# Notes
 
 This MIT License applies to all **technical assets** within the Astrocosmos project.
 
-This CC BY-NC-SA 4.0 license applies to all **narrative, worldbuilding, and creative content** within the Astrocosmos project.
+This CC BY-NC-SA 4.0 license applies to all **creative content** within the Astrocosmos project.
 
 ---
 
