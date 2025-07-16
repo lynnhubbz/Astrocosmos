@@ -8,6 +8,8 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 
 > More explanation in the WIP Wiki!
 
+---
+
 # Features
 
 - Military Units
@@ -15,6 +17,8 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 - Ship Naming System
 - Non-Space Trasnportation (InDev)
 - Galaxy and Planets (InDev)
+
+---
 
 # References
 > If i miss something, add it via issue with the label "suggestion"!
@@ -117,3 +121,11 @@ List of games that have space theme. Mostly these games below will be converged 
 ## Websites
 
 > WIP
+
+---
+
+# License
+
+Astrocosmos is licensed under:
+- ✨ [MIT License](./LICENSE.md) for scripts, templates, and technical tools
+- 🌌 [Creative Commons BY-NC-SA 4.0](./LICENSE.md) for lore, naming systems, and planetary magic
