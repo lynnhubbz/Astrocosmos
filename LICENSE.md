@@ -1,6 +1,6 @@
 # 📜 Astrocosmos License
 
-Astrocosmos uses a dual-license model to distinguish between technical tools and creative content. This ensures open development while protecting narrative integrity.
+Astrocosmos uses a dual-license model to distinguish between technical assets and creative contents. This ensures open development while protecting narrative integrity.
 
 Astrocosmos is licensed under:
 - ✨ [MIT License & Summary](./LICENSE.md#⚛️-technical-assets) for all **technical assets** within the Astrocosmos project.
