@@ -10,7 +10,17 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 
 # Table of Contents
 
-> WIP
+1. What is Astrocosmos
+	1. [Introduction](#introduction)
+	3. History
+	4. Purpose
+2. What it has
+	1. Features 
+4. How it can be interacted
+	1. Contributing
+	2. Security
+	3. License
+5. Credits 
 
 # Introduction
 
@@ -20,11 +30,21 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 
 # Features
 
-- Military Units
-- Spaceships Classification
-- Ship Naming System
-- Non-Space Transportation (InDev)
-- Galaxy and Planets (InDev)
+- AstroCosmology
+	- Galaxy and Planets (InDev)
+- AstroGeology (InDev)
+- AstroBiology (InDev)
+	- Original Specias
+	- Integrated External Species 
+- AstroSosiology
+  - Goverments (InDev)
+  - Currency (InDev)
+- Military Units (InDev)
+- AstroAutomotive
+  - Spaceships Classification (InDev)
+  - Ship Naming System
+  - Non-Space Transportation (InDev)
+- AstroMagiology (InDev)
 
 ---
 
@@ -132,7 +152,15 @@ List of games that have space theme. Mostly these games below will be converged 
 
 ---
 
-# How You Can Interact With It
+# How It Can Be Interacted
+
+## Contributing
+
+> WIP
+
+## Security
+
+> WIP
 
 ## License
 
