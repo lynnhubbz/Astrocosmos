@@ -16,6 +16,7 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 	4. Purpose
 2. What it has
 	1. [Features](#features)
+ 	2. [Releases](#releases)
 3. [References & Inpirations](#references)
 	1. [Science](#science--scifi)
  	2. [Fiction](#fictional)
@@ -48,6 +49,21 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 	- **Ship Naming System**
 	- **Non-Space Transportation** (InDev)
 - AstroMagiology (InDev)
+
+# Releases
+
+- Public Release
+
+	A stable releases of integrated Astrocosmos's assets and creative contents. Tagged with **pv**x.y.z.
+ 
+- Public Preview
+
+	A pre-releases of integrated Astrocosmos's assets and creative contents. Tagged with **pv**x.y.z-**pre-release.x.y.z**.
+
+- Developer Code
+
+  	A bundle of technical assets  partially integrated with Astrocosmos's creative contents. Tagged with **dv**x.y.z.
+
 
 ---
 
