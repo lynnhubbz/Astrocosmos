@@ -8,11 +8,11 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 
 > Explanation about Astrocosmos (world) itself is in the WIP Wiki!
 
-# Introduction
+# Table of Contents
 
 > WIP
 
-# Table of Contents
+# Introduction
 
 > WIP
 
@@ -141,3 +141,11 @@ Astrocosmos uses a dual-license model to distinguish between technical assets an
 Astrocosmos is licensed under:
 - ✨ [MIT License & Summary](./LICENSE.md#⚛️-technical-assets) for all **technical assets** within the Astrocosmos project.
 - 🌌 [Creative Commons Summary](./LICENSE.md#🌌-creative-contents) for all **creative contents** within the Astrocosmos project.
+
+---
+
+# Credits
+
+> WIP
+
+
