@@ -126,6 +126,8 @@ List of games that have space theme. Mostly these games below will be converged 
 
 # License
 
+Astrocosmos uses a dual-license model to distinguish between technical assests and creative contents. This ensures open development while protecting narrative integrity.
+
 Astrocosmos is licensed under:
-- ✨ [MIT License](./LICENSE.md) for all **technical assets** within the Astrocosmos project.
-- 🌌 [Creative Commons BY-NC-SA 4.0](./LICENSE.md) for all **creative content** within the Astrocosmos project.
+- ✨ [MIT License & Summary](./LICENSE.md#⚛️-technical-assets) for all **technical assets** within the Astrocosmos project.
+- 🌌 [Creative Commons Summary](./LICENSE.md#🌌-creative-contents) for all **creative contents** within the Astrocosmos project.
