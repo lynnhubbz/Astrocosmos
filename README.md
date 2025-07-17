@@ -4,9 +4,17 @@
 
 <h1 align="center"><strong>ASTROCOSMOS</strong></h1>
 
-Astrocosmos currently is a fun galactic-scale worldbuilding project about space fantasy, while still slightly based on science and convergences of lores from pop cultures. The idea came from a self-made minecraft modpack consist of [Create](https://modrinth.com/mod/create) and [Valkrien Skies](https://modrinth.com/mod/valkyrien-skies) mods with its main mod are [Cosmic Horizon](https://modrinth.com/mod/cosmic-horizons-cosmos) and [Starlance](https://modrinth.com/mod/starlance), these mods basically add (space)ships those need to be designed culturally for each planet/system. This repository acts as cloud save for my projects and provides files related to Astrocosmos with the intention of being helped with ideas and corrections from the contributors and collaborators. So, clearly, there is no other purpose, usage, or even benefit  of this project, unless for fun and learning Excels, VSCodes, GitHub, and Blender. That's the brief explanation to this idea! 
+Astrocosmos currently is a fun galactic-scale worldbuilding project about space fantasy, while still slightly based on science and convergences of lores from pop cultures. The idea came from a self-made minecraft modpack consist of [Create](https://modrinth.com/mod/create) and [Valkrien Skies](https://modrinth.com/mod/valkyrien-skies) mods with its main mod are [Cosmic Horizon](https://modrinth.com/mod/cosmic-horizons-cosmos) and [Starlance](https://modrinth.com/mod/starlance), these mods basically add (space)ships those need to be designed culturally for each planet/system. TThis repository serves as a cloud save and creative archive, inviting collaborators to help shape, correct, and imagine the cosmos together. Its mission? Purely for fun, cosmic learning, and mastering tools like Excel, VSCode, GitHub, and Blender. That's the brief explanation to this idea! 
 
-> More explanation in the WIP Wiki!
+> Explanation about Astrocosmos (world) itself is in the WIP Wiki!
+
+# Introduction
+
+> WIP
+
+# Table of Contents
+
+> WIP
 
 ---
 
@@ -15,7 +23,7 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 - Military Units
 - Spaceships Classification
 - Ship Naming System
-- Non-Space Trasnportation (InDev)
+- Non-Space Transportation (InDev)
 - Galaxy and Planets (InDev)
 
 ---
@@ -124,9 +132,11 @@ List of games that have space theme. Mostly these games below will be converged 
 
 ---
 
-# License
+# How You Can Interact With It
 
-Astrocosmos uses a dual-license model to distinguish between technical assests and creative contents. This ensures open development while protecting narrative integrity.
+## License
+
+Astrocosmos uses a dual-license model to distinguish between technical assets and creative contents. This ensures open development while protecting narrative integrity.
 
 Astrocosmos is licensed under:
 - ✨ [MIT License & Summary](./LICENSE.md#⚛️-technical-assets) for all **technical assets** within the Astrocosmos project.
