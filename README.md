@@ -15,12 +15,15 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 	3. History
 	4. Purpose
 2. What it has
-	1. Features 
-4. How it can be interacted
-	1. Contributing
-	2. Security
-	3. License
-5. Credits 
+	1. [Features](#features)
+3. [References & Inpirations](#references)
+	1. [Science](#science--scifi)
+ 	2. [Fiction](#fictional)
+5. [How it can be interacted](#how-it-can-be-interacted)
+	1. [Contributing](#contributing)
+	2. [Security](#security)
+	3. [License](#license)
+6. [Credits](#credits) 
 
 # Introduction
 
@@ -31,19 +34,19 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 # Features
 
 - AstroCosmology
-	- Galaxy and Planets (InDev)
+	- **Galaxy and Planets** (InDev)
 - AstroGeology (InDev)
 - AstroBiology (InDev)
-	- Original Specias
+	- **Original Species**
 	- Integrated External Species 
 - AstroSosiology
-  - Goverments (InDev)
-  - Currency (InDev)
+	- **Goverments** (InDev)
+	- **Currency** (InDev)
 - Military Units (InDev)
 - AstroAutomotive
-  - Spaceships Classification (InDev)
-  - Ship Naming System
-  - Non-Space Transportation (InDev)
+	- **Spaceships Classification** (InDev)
+	- **Ship Naming System**
+	- **Non-Space Transportation** (InDev)
 - AstroMagiology (InDev)
 
 ---
@@ -51,9 +54,25 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 # References
 > If i miss something, add it via issue with the label "suggestion"!
 
+## Science (& SciFi)
+
+### Channels
+
+> WIP
+
+- [Spacedock](https://www.youtube.com/@Spacedock) (YouTube)
+- [The Templin Institute](https://www.youtube.com/@TemplinInstitute) (YouTube)
+
+### Websites
+
+> WIP
+
+
+## Fictional
+
 > The one in highlight is the main reference for this worldbuilding
 
-## Space Games
+### Space Games
 
 List of games that have space theme. Mostly these games below will be converged and tailored to match the main lore of Astrocosmos.
 
@@ -133,22 +152,11 @@ List of games that have space theme. Mostly these games below will be converged 
 
 </details>
 
-## Space Franchises
+### Space Franchises
 
 - Miles From Tommorrowland	(Series)
 - Project Hail Mary	(Movie)
 - Star Wars	
-
-## Channels
-
-> WIP
-
-- [Spacedock](https://www.youtube.com/@Spacedock) (YouTube)
-- [The Templin Institute](https://www.youtube.com/@TemplinInstitute) (YouTube)
-
-## Websites
-
-> WIP
 
 ---
 
