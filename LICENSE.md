@@ -1,8 +1,10 @@
-# 📜 Astrocosmos License Summary
+# 📜 Astrocosmos License
+
+Astrocosmos uses a dual-license model to distinguish between technical tools and creative content. This ensures open development while protecting narrative integrity.
 
 Astrocosmos is licensed under:
-- ✨ [MIT License](./LICENSE.md) for all **technical assets** within the Astrocosmos project.
-- 🌌 [Creative Commons BY-NC-SA 4.0](./LICENSE.md) for all **creative content** within the Astrocosmos project.
+- ✨ [MIT License & Summary](./LICENSE.md#⚛️-technical-assets) for all **technical assets** within the Astrocosmos project.
+- 🌌 [Creative Commons Summary](./LICENSE.md#🌌-creative-contents) for all **creative contents** within the Astrocosmos project.
 
 ---
 
@@ -32,9 +34,29 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+### Summary
+
+You are free to:
+- **Use** the software and associated files for any purpose
+- **Modify** and customize them to fit your own systems or galaxies
+- **Distribute**, **publish**, and even **sell** copies
+- **Include** them in commercial or open projects
+
+Under the following conditions:
+- You **must credit** the original author: William Skyfurs
+- You must include the original **MIT License text** in any distributed copies
+- The software is provided **"as is"** — without any warranty or guarantee
+
+
+### Attribution Notice (MIT)
+
+> “Technical assets derived from Astrocosmos by William Skyfurs, licensed under the MIT License.”
+
+For the full legal terms, refer to the MIT section above or see [opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
+
 ---
 
-## 🌌 Creative Content
+## 🌌 Creative Contents
 
 > Creative contents are, but not exclusively limited to, worldbuilding documents, lore descriptions, planetary naming systems, species designs, cultural frameworks, philosophical narratives, visual art, and any other imaginative expressions that define the Astrocosmos universe.
 
@@ -73,7 +95,7 @@ If you use or adapt content from Astrocosmos, please include the following attri
 
 This MIT License applies to all **technical assets** within the Astrocosmos project.
 
-This CC BY-NC-SA 4.0 license applies to all **creative content** within the Astrocosmos project.
+This CC BY-NC-SA 4.0 license applies to all **creative contents** within the Astrocosmos project.
 
 ---
 
