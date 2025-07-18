@@ -79,6 +79,10 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 
   	A bundle of technical assets  partially integrated with Astrocosmos's creative contents.
 
+# Files
+
+🧭 Files in ALL CAPS represent foundational documents—protecting the cosmic integrity and collaborative spirit of Astrocosmos.
+
 ---
 
 # References
