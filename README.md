@@ -256,6 +256,8 @@ They are the asteroids of Astrocosmos, shaping it's planets and stars, glitter o
 
 ![Asset 7](https://github.com/user-attachments/assets/de6c5415-ba37-4fcd-b614-71f7efae41d9)
 
-And to you. Yes. **_you_**
+<p align="center">And to you. Yes. <strong><em>you</em></strong>.</p>
+<p align="center">Thank you for being ready to realize how fool and little we are.</p> 
+<p align="center">ANGKASA!</p>
 
-Thank you for being ready to realize how fool and little we are. ANGKASA!
+
