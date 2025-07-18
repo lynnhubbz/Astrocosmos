@@ -23,7 +23,8 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 5. [How you can interact with it](#how-you-can-interact-with-it)
 	1. [Contributing](#contributing)
 	2. [Security](#security)
-	3. [License](#license)
+	3. [Legal](#legal)
+	4. [License](#license)
 6. [Credits](#credits) 
 
 # Introduction
@@ -196,6 +197,10 @@ List of games that have space theme. Mostly these games below will be converged 
 
 # How You Can Interact With It
 
+This section outlines how you can interact with Astrocosmos—a world that awaits your adventure. 
+
+Below are mostly a summary of four important files in this repository: CONTRIBUTING.md, SECURITY.md, LEGAL.md, and LICENSE.md. CONTRIBUTING tells you how you can help Astrocosmos alive. SECURITY tells you how to report sensitive information about Astrocosmos. LEGAL asserts informal trademark rights over the name "Astrocosmos," while LICENSE outlines copyright and usage terms of technical assets and creative contents within the Astrocosmos Project
+
 ## Contributing
 
 > WIP
@@ -206,7 +211,7 @@ List of games that have space theme. Mostly these games below will be converged 
 
 ## Legal
 
-The name **Astrocosmos** refers exclusively to the non-commercial worldbuilding universe created by William.
+The name **Astrocosmos™** refers exclusively to the non-commercial worldbuilding universe created by William.
 
 Use of this name outside the context of this project requires written consent. Please respect its identity as a narrative and collaborative domain. More information at [LEGAL.md](./LEGAL.md) file
 
