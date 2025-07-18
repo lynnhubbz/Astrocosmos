@@ -1,8 +1,7 @@
-![Asset 7](https://github.com/user-attachments/assets/de6c5415-ba37-4fcd-b614-71f7efae41d9)
-
 <p align="center"><em>"There is no star brighter than you ... ANGKASA!"</em></p>
 
-<h1 align="center"><strong>ASTROCOSMOS</strong></h1>
+<h1 align="center"><img width="740" height="451" alt="Logo Title White" src="https://github.com/user-attachments/assets/c41ff678-63a6-4ccf-abf0-3cbdb48cc6a3" />
+</h1>
 
 Astrocosmos currently is a fun galactic-scale worldbuilding project about space fantasy, while still slightly based on science and convergences of lores from pop cultures. The idea came from a self-made minecraft modpack consist of [Create](https://modrinth.com/mod/create) and [Valkrien Skies](https://modrinth.com/mod/valkyrien-skies) mods with its main mod are [Cosmic Horizon](https://modrinth.com/mod/cosmic-horizons-cosmos) and [Starlance](https://modrinth.com/mod/starlance), these mods basically add (space)ships those need to be designed culturally for each planet/system, and then Astrocosmos officially established in 25th of June, 2025. This repository serves as a cloud save and creative archive, inviting collaborators to help shape, correct, and imagine the cosmos together. Its mission? Purely for fun, cosmic learning, and mastering tools like Excel, VSCode, GitHub, and Blender. That's the brief explanation to this idea! 
 
@@ -254,6 +253,8 @@ I give my special asteroid thanks to everyone who has participated in this silly
 They are the asteroids of Astrocosmos, shaping it's planets and stars, glitter of the skies
 
 ---
+
+![Asset 7](https://github.com/user-attachments/assets/de6c5415-ba37-4fcd-b614-71f7efae41d9)
 
 And to you. Yes. **_you_**
 
