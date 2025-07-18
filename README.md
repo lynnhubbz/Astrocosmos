@@ -4,9 +4,9 @@
 
 <h1 align="center"><strong>ASTROCOSMOS</strong></h1>
 
-Astrocosmos currently is a fun galactic-scale worldbuilding project about space fantasy, while still slightly based on science and convergences of lores from pop cultures. The idea came from a self-made minecraft modpack consist of [Create](https://modrinth.com/mod/create) and [Valkrien Skies](https://modrinth.com/mod/valkyrien-skies) mods with its main mod are [Cosmic Horizon](https://modrinth.com/mod/cosmic-horizons-cosmos) and [Starlance](https://modrinth.com/mod/starlance), these mods basically add (space)ships those need to be designed culturally for each planet/system. This repository serves as a cloud save and creative archive, inviting collaborators to help shape, correct, and imagine the cosmos together. Its mission? Purely for fun, cosmic learning, and mastering tools like Excel, VSCode, GitHub, and Blender. That's the brief explanation to this idea! 
+Astrocosmos currently is a fun galactic-scale worldbuilding project about space fantasy, while still slightly based on science and convergences of lores from pop cultures. The idea came from a self-made minecraft modpack consist of [Create](https://modrinth.com/mod/create) and [Valkrien Skies](https://modrinth.com/mod/valkyrien-skies) mods with its main mod are [Cosmic Horizon](https://modrinth.com/mod/cosmic-horizons-cosmos) and [Starlance](https://modrinth.com/mod/starlance), these mods basically add (space)ships those need to be designed culturally for each planet/system, and then it's officially published in 25th of June, 2025. This repository serves as a cloud save and creative archive, inviting collaborators to help shape, correct, and imagine the cosmos together. Its mission? Purely for fun, cosmic learning, and mastering tools like Excel, VSCode, GitHub, and Blender. That's the brief explanation to this idea! 
 
-> Explanation about Astrocosmos (world) itself is in the WIP Wiki!
+> Complete explanation about Astrocosmos (world) itself is in the WIP Wiki!
 
 # Table of Contents
 
@@ -20,7 +20,7 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 3. [References & Inpirations](#references)
 	1. [Science](#science--scifi)
  	2. [Fiction](#fictional)
-5. [How it can be interacted](#how-it-can-be-interacted)
+5. [How you can interact with it](#how-you-can-interact-with-it)
 	1. [Contributing](#contributing)
 	2. [Security](#security)
 	3. [License](#license)
@@ -29,6 +29,14 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 # Introduction
 
 > WIP
+
+## Astrocosmos
+
+## Astrocosmos Integrated
+
+## History
+
+## Purpose
 
 ---
 
@@ -54,15 +62,15 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 
 - Public Release
 
-	A stable releases of integrated Astrocosmos's assets and creative contents. Tagged with **pv**x.y.z.
+	A stable releases of integrated Astrocosmos's assets and creative contents. Tagged with ***pv***x.y.z.
  
 - Public Preview
 
-	A pre-releases of integrated Astrocosmos's assets and creative contents. Tagged with **pv**x.y.z-**pre-release.x.y.z**.
+	A pre-releases of integrated Astrocosmos's assets and creative contents. Tagged with ***pv***x.y.z ***-pre-release.x.y.z***.
 
 - Developer Code
 
-  	A bundle of technical assets  partially integrated with Astrocosmos's creative contents. Tagged with **dv**x.y.z.
+  	A bundle of technical assets  partially integrated with Astrocosmos's creative contents.
 
 
 ---
@@ -176,7 +184,7 @@ List of games that have space theme. Mostly these games below will be converged 
 
 ---
 
-# How It Can Be Interacted
+# How You Can Interact With It
 
 ## Contributing
 
