@@ -38,7 +38,7 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 
 - Astrocosmos
 
-	Astrocosmos is a (more-than-)galactic-scale universe about _our_ space fantasy. blending pop-cultures while keeping my own original idea and real science. 
+	Astrocosmos is a (more-than-)galactic-scale universe about _our_ space fantasy, (explain about science and pop-culture here). 
 
 - Astrocosmos Integrated
 
@@ -169,7 +169,7 @@ List of games that have space theme. Mostly these games below will be converged 
 | 40   | Space Haven                 |          |   |     |                                                            |
 | 41   | SpaceBourne                 |          |   |     |                                                            |
 | 42   | SpaceCraft                  |          |   |     |                                                            |
-| 43   | Star Citizen                |          | ✅ | ✅   |                                                            |
+| 43   | Star Citizen                |          | ✅ | ✅   | [Star Citizen Wiki](https://starcitizen.tools/)                                                           |
 | 44   | Star Dynasties              | ✅        |   |     |                                                            |
 | 45   | Star General                |          |   |     |                                                            |
 | 46   | Star Ruler                  | ✅        |   |     |                                                            |
@@ -244,21 +244,28 @@ Astrocosmos is licensed under:
 
 ## Thanks
 
-### Stellar Thanks
+1. **Stellar Thanks**
 
-### Gas Giant Thanks
+2. **Gas Giant Thanks**
 
-### Terrestrial Thanks
+	
 
-### Asteroid Thanks
+3. **Terrestrial Thanks**
 
-I give my special asteroid thanks to everyone who has participated in this silly useless project, even just testing a code or lore, them are:
+	I give my special terrestrial planet thanks to everyone who had helped me in brainstorming ideas and code, them are:
 
-- Caspy from Instagram,
-- Cirro from Instagram,
-- Suya from Discord,
+	- Pan from Discord
+	- Felix Aesther from Discord 
 
-They are the asteroids of Astrocosmos, shaping it's planets and stars, glitter of the skies
+5. **Asteroid Thanks**
+
+	I give my special asteroid thanks to everyone who has participated in this silly useless project, even just testing a code or lore, them are:
+	
+	- Caspy from Instagram,
+	- Cirro from Instagram,
+	- Suya from Discord,
+	
+	They are the asteroids of Astrocosmos, shaping it's planets and stars, glitter of the skies
 
 ---
 
