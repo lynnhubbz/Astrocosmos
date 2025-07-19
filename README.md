@@ -30,19 +30,19 @@ Astrocosmos currently is a fun galactic-scale worldbuilding project about space 
 
 > WIP
 
-## Astrocosmos
+- Astrocosmos
 
-Astrocosmos is a (more-than-)galactic-scale universe about _our_ space fantasy, blending pop-cultures while keeping my own original idea and real science. 
+	Astrocosmos is a (more-than-)galactic-scale universe about _our_ space fantasy. blending pop-cultures while keeping my own original idea and real science. 
 
-## Astrocosmos Integrated
+- Astrocosmos Integrated
 
-Astrocosmos Integrated Project is (and it is) a project aims to visualize Astrocosmos world by integrating various tools and materials. It's an initiative dedicated to turning conceptual depth into vivid, interactive expressions. The tools and materials currently used are Excel, Visual Studio Code (Jupyter Notebok, Plotly), GitHub, and Blender. These data processors and visual designer helps animate the universe's complexity, making each star, planet, species, and philosphy feel alive and explorable
+	Astrocosmos Integrated Project is (and it is) a project aims to visualize Astrocosmos world by integrating various tools and materials. It's an initiative dedicated to turning conceptual depth into vivid, interactive expressions. The tools and materials currently used are Excel, Visual Studio Code (Jupyter Notebok, Plotly), GitHub, and Blender. These data processors and visual designer helps animate the universe's complexity, making each star, planet, species, and philosphy feel alive and explorable
 
-# History
+> History
 
 Astrocosmos was established on **June 25, 2025**—marking the beginning of a universe that fuses science, storytelling, and cosmic identity. The idea came from a self-made minecraft modpack consist of [Create](https://modrinth.com/mod/create) and [Valkrien Skies](https://modrinth.com/mod/valkyrien-skies) mods with its main mod are [Cosmic Horizon](https://modrinth.com/mod/cosmic-horizons-cosmos) and [Starlance](https://modrinth.com/mod/starlance), these mods basically add (space)ships those need to be designed culturally for each planet/system. Therefore, a full how and why was made, and ended up as a (mostly) independent worldbuilding project.
 
-# Purpose
+> Purpose
 
 ---
 
