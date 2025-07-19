@@ -10,7 +10,10 @@
 <div align="center">
 
 [![Static Badge](https://img.shields.io/badge/MIT_%2B_CC_BY--NC--SA-abc?style=flat&label=License&labelColor=blue&color=grey)](LICENSE)
+
 [![Static Badge](https://img.shields.io/badge/Roadmap-abc?style=flat&label=Astrocosmos&labelColor=blueviolet&color=green)](https://github.com/williamskyfurs/Astrocosmos/projects)
+[![Static Badge](https://img.shields.io/badge/Wiki-abc?style=flat&label=Astrocosmos&labelColor=blueviolet&color=yellow)
+](https://github.com/williamskyfurs/Astrocosmos/wiki)
 
 
 
