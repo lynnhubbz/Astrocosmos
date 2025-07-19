@@ -267,18 +267,20 @@ Astrocosmos is licensed under:
 
 	I give my special terrestrial planet thanks to everyone who had helped me in brainstorming ideas and code, them are:
 
-	- Pan from Discord
-	- Felix Aesther from Discord 
+	- Celestia from Discord,
+	- Felix from Instagram,
+	- Pan from Discord,
 
 5. **Asteroid Thanks**
 
 	I give my special asteroid thanks to everyone who has participated in this silly useless project, even just testing a code or lore, them are:
-	
-	- Caspy from Instagram,
+		
+	- Caspy from Discord,
 	- Cirro from Instagram,
+	- OxideXen from Discord,
 	- Suya from Discord,
 	
-	They are the asteroids of Astrocosmos, shaping it's planets and stars, glitter of the skies
+	They are the asteroids of Astrocosmos, shaping it's planets and stars,
 
 ---
 
