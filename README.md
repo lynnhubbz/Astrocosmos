@@ -7,6 +7,15 @@
 
 > WIP Badges
 
+<div align="center">
+
+[![Static Badge](https://img.shields.io/badge/MIT_%2B_CC_BY--NC--SA-abc?style=flat&label=License&labelColor=blue&color=grey)](LICENSE)
+[![Static Badge](https://img.shields.io/badge/Roadmap-abc?style=flat&label=Astrocosmos&labelColor=blueviolet&color=green)](https://github.com/williamskyfurs/Astrocosmos/projects)
+
+
+
+</div>
+
 Astrocosmos currently is a fun galactic-scale worldbuilding project about space fantasy, while still slightly based on science and convergences of lores from pop cultures. The idea came from a self-made minecraft modpack consist of [Create](https://modrinth.com/mod/create) and [Valkrien Skies](https://modrinth.com/mod/valkyrien-skies) mods with its main mod are [Cosmic Horizon](https://modrinth.com/mod/cosmic-horizons-cosmos) and [Starlance](https://modrinth.com/mod/starlance), these mods basically add (space)ships those need to be designed culturally for each planet/system, and then Astrocosmos officially established in 25th of June, 2025. This repository serves as a cloud save and creative archive, inviting collaborators to help shape, correct, and imagine the cosmos together. Its mission? Purely for fun, cosmic learning, and mastering tools like Excel, VSCode, GitHub, and Blender. That's the brief explanation to this idea! 
 
 > Complete explanation about Astrocosmos (world) itself is in the WIP Wiki!
@@ -87,6 +96,10 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 # Files
 
 🧭 Files in ALL CAPS represent foundational documents—protecting the cosmic integrity and collaborative spirit of Astrocosmos.
+
+# Socials
+
+> Currently, Astrocosmos only have GitHub as its social ...
 
 ---
 
@@ -269,9 +282,9 @@ Astrocosmos is licensed under:
 
 ---
 
-<p align="center">
+<div align="center">
   <img src="https://github.com/user-attachments/assets/de6c5415-ba37-4fcd-b614-71f7efae41d9" alt="Asset 7">
-</p>
+</div>
 
 <p align="center">And to you. Yes. <strong><em>you</em></strong>.</p>
 <p align="center">Thank you for being ready to realize how fool and little we are.</p> 
