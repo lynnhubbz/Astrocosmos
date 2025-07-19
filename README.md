@@ -1,11 +1,17 @@
 <p align="center"><em>"There is no star brighter than you ... ANGKASA!"</em></p>
 
-<h1 align="center"><img width="740" height="451" alt="Logo Title White" src="https://github.com/user-attachments/assets/c41ff678-63a6-4ccf-abf0-3cbdb48cc6a3" />
-</h1>
+---
+
+<p align="center"><img width="740" height="451" alt="Logo Title White" src="https://github.com/user-attachments/assets/c41ff678-63a6-4ccf-abf0-3cbdb48cc6a3" />
+</p>
+
+> WIP Badges
 
 Astrocosmos currently is a fun galactic-scale worldbuilding project about space fantasy, while still slightly based on science and convergences of lores from pop cultures. The idea came from a self-made minecraft modpack consist of [Create](https://modrinth.com/mod/create) and [Valkrien Skies](https://modrinth.com/mod/valkyrien-skies) mods with its main mod are [Cosmic Horizon](https://modrinth.com/mod/cosmic-horizons-cosmos) and [Starlance](https://modrinth.com/mod/starlance), these mods basically add (space)ships those need to be designed culturally for each planet/system, and then Astrocosmos officially established in 25th of June, 2025. This repository serves as a cloud save and creative archive, inviting collaborators to help shape, correct, and imagine the cosmos together. Its mission? Purely for fun, cosmic learning, and mastering tools like Excel, VSCode, GitHub, and Blender. That's the brief explanation to this idea! 
 
 > Complete explanation about Astrocosmos (world) itself is in the WIP Wiki!
+
+---
 
 # Table of Contents
 
@@ -93,18 +99,20 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 
 > WIP
 
-#### Worldbuilding
+- Worldbuilding
 
-- Artifexian
+	- Artifexian
 
-#### Space
+- Space
 
-- [Spacedock](https://www.youtube.com/@Spacedock) (YouTube)
-- [The Templin Institute](https://www.youtube.com/@TemplinInstitute) (YouTube)
+	- [Spacedock](https://www.youtube.com/@Spacedock) (YouTube)
+	- [The Templin Institute](https://www.youtube.com/@TemplinInstitute) (YouTube)
 
 ### Websites
 
 > WIP
+
+- Solar System Scope
 
 ## Fictional
 
@@ -117,7 +125,7 @@ List of games that have space theme. Mostly these games below will be converged 
 <details>
 <summary>📜 List of Space Games</summary>
 
-| Num. | Name                        | Strategy | ? | Sim | Reference                                                  |
+| Num. | Name                        | RTS	| ? | Sim | Reference                                                  |
 | ---- | --------------------------- | -------- | - | --- | ---------------------------------------------------------- |
 | 1    | ∆V: Rings of Saturn         |          |   |     |                                                            |
 | 2    | Astrometica                 |          |   |     |                                                            |
@@ -169,7 +177,7 @@ List of games that have space theme. Mostly these games below will be converged 
 | 48   | Star Traders                |          | ✅ |     |                                                            |
 | 49   | Star Trek                   |          |   |     |                                                            |
 | 50   | Star Trucker                |          |   |     |                                                            |
-| 51   | **Star Wars**                   | ✅        | ✅ | ✅   | [Wookiepedia](https://starwars.fandom.com/wiki/Main_Page) |
+| 51   | **Star Wars**                   | ✅        | ✅ | ✅   | [Wookiepedia](https://starwars.fandom.com/wiki/Main_Page), [StarWars](https://www.starwars.com/databank) |
 | 52   | Starbase                    |          |   | ✅   |                                                            |
 | 53   | Starcom                     |          | ✅ |     |                                                            |
 | 54   | Starfield                   |          |   | ✅   |                                                            |
@@ -179,7 +187,7 @@ List of games that have space theme. Mostly these games below will be converged 
 | 58   | Starsector                  | ✅        |   |     |                                                            |
 | 59   | Stellar Monarch             | ✅        |   |     |                                                            |
 | 60   | Stellar Warfare             |          |   |     |                                                            |
-| 61   | Stellaris                   | ✅        |   |     |                                                            |
+| 61   | **Stellaris**                   | ✅        |   |     |    [Paradox Wiki](https://stellaris.paradoxwikis.com/Stellaris_Wiki)                                                        |
 | 62   | Sword of the Stars          | ✅        |   |     |                                                            |
 | 63   | Terra Invicta               | ✅        |   |     |                                                            |
 | 64   | Transcendence               |          |   |     |                                                            |
@@ -202,7 +210,7 @@ List of games that have space theme. Mostly these games below will be converged 
 
 This section outlines how you can interact with Astrocosmos—a world that awaits your adventure. 
 
-Below are mostly a summary of four important files in this repository: CONTRIBUTING.md, SECURITY.md, LEGAL.md, and LICENSE.md. CONTRIBUTING tells you how you can help Astrocosmos alive. SECURITY tells you how to report sensitive information about Astrocosmos. LEGAL asserts informal trademark rights over the name "Astrocosmos," while LICENSE outlines copyright and usage terms of technical assets and creative contents within the Astrocosmos Project
+Below are mostly summaries of four important files in this repository: [CONTRIBUTING.md](./CONTRIBUTING.md), [SECURITY.md](./SECURITY.md), [LEGAL.md](./LEGAL.md), and [LICENSE.md](./LICENSE.md). CONTRIBUTING tells you how you can help Astrocosmos alive. SECURITY tells you how to report sensitive information about Astrocosmos. LEGAL asserts informal trademark rights over the name "Astrocosmos," while LICENSE outlines copyright and usage terms of technical assets and creative contents within the Astrocosmos Project
 
 ## Contributing
 
@@ -254,7 +262,9 @@ They are the asteroids of Astrocosmos, shaping it's planets and stars, glitter o
 
 ---
 
-![Asset 7](https://github.com/user-attachments/assets/de6c5415-ba37-4fcd-b614-71f7efae41d9)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/de6c5415-ba37-4fcd-b614-71f7efae41d9" alt="Asset 7">
+</p>
 
 <p align="center">And to you. Yes. <strong><em>you</em></strong>.</p>
 <p align="center">Thank you for being ready to realize how fool and little we are.</p> 
