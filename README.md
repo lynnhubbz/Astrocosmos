@@ -13,12 +13,18 @@
 
 <div align="center">
 
-[![Static Badge](https://img.shields.io/badge/MIT_%2B_CC_BY--NC--SA-abc?style=flat&label=License&labelColor=blue&color=grey)](LICENSE)
+[![Static Badge](https://img.shields.io/badge/MIT_%2B_CC_BY--NC--SA-abc?style=flat&label=License&labelColor=blue&color=grey)](LICENSE.md)
 
-[![Static Badge](https://img.shields.io/badge/Roadmap-abc?style=flat&label=Worldbuilding%20Progress!&labelColor=blueviolet&color=green)](https://github.com/williamskyfurs/Astrocosmos/projects)
+
+
+[![Static Badge](https://img.shields.io/badge/Roadmap-abc?style=flat&label=Worldbuilding%20Progress!&labelColor=blueviolet&color=chartreuse)](https://github.com/williamskyfurs/Astrocosmos/projects)
 [![Static Badge](https://img.shields.io/badge/Wiki-abc?style=flat&label=The%20Cosmic%20Archive!&labelColor=blueviolet&color=yellow)
 ](https://github.com/williamskyfurs/Astrocosmos/wiki)
 
+###### Latest Versions:
+
+![Static Badge](https://img.shields.io/badge/Astrocosmos%20(universe)-v.4.3.4-abc?labelColor=purple&color=chartreuse)
+![Static Badge](https://img.shields.io/badge/Astrocosmos%20Integrated-v0.1.1--alpha-abc?labelColor=lightblue&color=chartreuse)
 
 
 </div>
