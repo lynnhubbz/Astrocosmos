@@ -2,8 +2,12 @@
 
 ---
 
-<p align="center"><img width="740" height="451" alt="Logo Title White" src="https://github.com/user-attachments/assets/c41ff678-63a6-4ccf-abf0-3cbdb48cc6a3" />
+<p align="center">
+	
+<img width="740" height="451" alt="Logo Title Colored v2" src="https://github.com/user-attachments/assets/65058b3e-d19d-41fd-969b-c47fb509e209" />
+
 </p>
+
 
 > WIP Badges
 
@@ -11,8 +15,8 @@
 
 [![Static Badge](https://img.shields.io/badge/MIT_%2B_CC_BY--NC--SA-abc?style=flat&label=License&labelColor=blue&color=grey)](LICENSE)
 
-[![Static Badge](https://img.shields.io/badge/Roadmap-abc?style=flat&label=Astrocosmos&labelColor=blueviolet&color=green)](https://github.com/williamskyfurs/Astrocosmos/projects)
-[![Static Badge](https://img.shields.io/badge/Wiki-abc?style=flat&label=Astrocosmos&labelColor=blueviolet&color=yellow)
+[![Static Badge](https://img.shields.io/badge/Roadmap-abc?style=flat&label=Worldbuilding%20Progress!&labelColor=blueviolet&color=green)](https://github.com/williamskyfurs/Astrocosmos/projects)
+[![Static Badge](https://img.shields.io/badge/Wiki-abc?style=flat&label=The%20Cosmic%20Archive!&labelColor=blueviolet&color=yellow)
 ](https://github.com/williamskyfurs/Astrocosmos/wiki)
 
 
