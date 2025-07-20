@@ -24,7 +24,7 @@
 ###### Latest Versions:
 
 ![Static Badge](https://img.shields.io/badge/Astrocosmos%20(universe)-v.4.3.4-abc?labelColor=purple&color=chartreuse)
-![Static Badge](https://img.shields.io/badge/Astrocosmos%20Integrated-v0.1.1--alpha-abc?labelColor=lightblue&color=chartreuse)
+![Static Badge](https://img.shields.io/badge/Astrocosmos%20Integrated-v0.1.1--alpha.1.1-abc?labelColor=lightblue&color=chartreuse)
 
 
 </div>
