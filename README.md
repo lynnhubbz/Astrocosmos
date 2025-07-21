@@ -20,7 +20,7 @@
 [![Static Badge](https://img.shields.io/badge/Legal-Astrocosmos™-abc?labelColor=blue&color=grey)](LICENSE.md)
 [![Static Badge](https://img.shields.io/badge/Credits-List-abc?labelColor=orange&color=grey)](credits.md)
 [![Static Badge](https://img.shields.io/badge/Code_of_Conduct-as_rules-abc?labelColor=red&color=grey)](.github/CODE_OF_CONDUCT.md)
-[![Static Badge](https://img.shields.io/Contributing-SOP-abc?labelColor=yellow&color=grey)](.github/CONTRIBUTING.md)
+[![Static Badge](https://img.shields.io/badge/Contributing-SOP-abc?labelColor=yellow&color=grey)](.github/CODE_OF_CONDUCT.md)
 [![Static Badge](https://img.shields.io/badge/Security-report-abc?labelColor=blue&color=grey)](.github/SECURITY.md)
 
 
