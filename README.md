@@ -23,7 +23,6 @@
 [![Static Badge](https://img.shields.io/badge/Contributing-SOP-abc?labelColor=yellow&color=grey)](.github/CODE_OF_CONDUCT.md)
 [![Static Badge](https://img.shields.io/badge/Security-report-abc?labelColor=blue&color=grey)](.github/SECURITY.md)
 
-
 ###### Latest Versions:
 
 ![Static Badge](https://img.shields.io/badge/Astrocosmos%20(universe)-v.4.3.4-abc?labelColor=purple&color=chartreuse)
