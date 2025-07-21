@@ -1,3 +1,5 @@
+> WIP
+
 # 📜 Astrocosmos License
 
 Astrocosmos uses a dual-license model to distinguish between technical assets and creative contents. This ensures open development while protecting narrative integrity.
