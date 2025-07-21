@@ -301,5 +301,3 @@ Astrocosmos is licensed under:
 <p align="center">And to you. Yes. <strong><em>you</em></strong>.</p>
 <p align="center">Thank you for being ready to realize how fool and little we are.</p> 
 <p align="center">ANGKASA!</p>
-
-
