@@ -16,7 +16,12 @@
 
 ###### Important Files:
 
-[![Static Badge](https://img.shields.io/badge/MIT_%2B_CC_BY--NC--SA-abc?style=flat&label=License&labelColor=blue&color=grey)](LICENSE.md)
+[![Static Badge](https://img.shields.io/badge/License-MIT_%2B_CC_BY--NC--SA-abc?labelColor=blue&color=grey)](LICENSE.md)
+[![Static Badge](https://img.shields.io/badge/Legal-Astrocosmos™-abc?labelColor=blue&color=grey)](LICENSE.md)
+[![Static Badge](https://img.shields.io/badge/Credits-List-abc?labelColor=orange&color=grey)](credits.md)
+[![Static Badge](https://img.shields.io/badge/Code_of_Conduct-as_rules-abc?labelColor=red&color=grey)](.github/CODE_OF_CONDUCT.md)
+[![Static Badge](https://img.shields.io/badge/Contributing-SOP-abc?labelColor=yellow&color=grey)](.github/CODE_OF_CONDUCT.md)
+[![Static Badge](https://img.shields.io/badge/Security-report-abc?labelColor=blue&color=grey)](.github/SECURITY.md)
 
 ###### Latest Versions:
 
@@ -105,7 +110,16 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 
 # Files
 
-🧭 Files in ALL CAPS represent foundational documents—protecting the cosmic integrity and collaborative spirit of Astrocosmos.
+🧭 Files in ALL CAPS represent foundational documents—protecting the cosmic integrity and collaborative spirit of Astrocosmos. Most of it are located in .github subfolder. So, be sure to read those file to help you venture this universe!
+
+- ./ (root directory)
+	- [LEGAL.md](./LEGAL.md)
+	- [LICENSE.md](./LICENSE.md)
+	- [credits.md](./credits.md) (still important)
+- .github/
+	- [CONTRIBUTING.md](.github/CONTRIBUTING.md)
+	- [SECURITY.md](.github/SECURITY.md)
+	- [FUNDING.yml](.github/FUNDING.yml) (less important)
 
 # Socials
 
@@ -233,11 +247,19 @@ List of games that have space theme. Mostly these games below will be converged 
 
 This section outlines how you can interact with Astrocosmos—a world that awaits your adventure. 
 
-Below are mostly summaries of four important files in this repository: [CONTRIBUTING.md](./CONTRIBUTING.md), [SECURITY.md](./SECURITY.md), [LEGAL.md](./LEGAL.md), and [LICENSE.md](./LICENSE.md). CONTRIBUTING tells you how you can help Astrocosmos alive. SECURITY tells you how to report sensitive information about Astrocosmos. LEGAL asserts informal trademark rights over the name "Astrocosmos," while LICENSE outlines copyright and usage terms of technical assets and creative contents within the Astrocosmos Project
+Below are mostly summaries of four important files in this repository: [CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md), [CONTRIBUTING.md](.github/CONTRIBUTING.md), [SECURITY.md](.github/SECURITY.md), [LEGAL.md](./LEGAL.md), and [LICENSE.md](./LICENSE.md). CODE_OFCONDUCT tells you the rule and how to behave about Astrocosmos. CONTRIBUTING tells you how you can help Astrocosmos alive. SECURITY tells you how to report sensitive information about Astrocosmos. LEGAL asserts informal trademark rights over the name "Astrocosmos," while LICENSE outlines copyright and usage terms of technical assets and creative contents within the Astrocosmos Project
+
+## Rules
+
+> WIP
 
 ## Contributing
 
 > WIP
+
+### Funding
+
+> Because Astrocosmos is a fun worldbuilding project, we currently **only** accept funding in the form of **ideas**
 
 ## Security
 
