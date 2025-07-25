@@ -114,8 +114,8 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 
 - ./ (root directory)
 	- .github/
-	- files from releases/
-	- Astrocosmos Integrated.exe (Shortcut)
+	- files from the releases/
+	- application from the release.exe (Shortcut)
 	- [LEGAL.md](./LEGAL.md)
 	- [LICENSE.md](./LICENSE.md)
 	- [credits.md](./credits.md) (still important)
