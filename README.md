@@ -4,7 +4,7 @@
 
 <p align="center">
 	
-<img width="740" height="451" alt="Logo Title Colored v2" src="https://github.com/user-attachments/assets/65058b3e-d19d-41fd-969b-c47fb509e209" />
+<img alt="Logo Title Colored v2" src="https://github.com/user-attachments/assets/65058b3e-d19d-41fd-969b-c47fb509e209" />
 
 </p>
 
