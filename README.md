@@ -4,7 +4,7 @@
 
 <p align="center">
 	
-<img width="740" height="451" alt="Logo Title Colored v2" src="https://github.com/user-attachments/assets/65058b3e-d19d-41fd-969b-c47fb509e209" />
+<img alt="Logo Title Colored v2" src="https://github.com/user-attachments/assets/65058b3e-d19d-41fd-969b-c47fb509e209" />
 
 </p>
 
@@ -113,6 +113,9 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 🧭 Files in ALL CAPS represent foundational documents—protecting the cosmic integrity and collaborative spirit of Astrocosmos. Most of it are located in .github subfolder. So, be sure to read those file to help you venture this universe!
 
 - ./ (root directory)
+	- .github/
+	- files from releases/
+	- Astrocosmos Integrated.exe (Shortcut)
 	- [LEGAL.md](./LEGAL.md)
 	- [LICENSE.md](./LICENSE.md)
 	- [credits.md](./credits.md) (still important)
