@@ -13,6 +13,8 @@
 [![Static Badge](https://img.shields.io/badge/Roadmap-abc?style=flat&label=Worldbuilding%20Progress!&labelColor=blueviolet&color=chartreuse)](https://github.com/williamskyfurs/Astrocosmos/projects)
 [![Static Badge](https://img.shields.io/badge/Wiki-abc?style=flat&label=The%20Cosmic%20Archive!&labelColor=blueviolet&color=yellow)
 ](https://github.com/williamskyfurs/Astrocosmos/wiki)
+![Static Badge](https://img.shields.io/badge/Angkasawan's%20Citadel-coming%20soon%20...-abc?logo=discord&logoColor=white&labelColor=blueviolet)
+
 
 ###### Important Files:
 
@@ -25,8 +27,8 @@
 
 ###### Latest Versions:
 
-![Static Badge](https://img.shields.io/badge/Astrocosmos%20(universe)-v.4.3.4-abc?labelColor=purple&color=chartreuse)
-![Static Badge](https://img.shields.io/badge/Astrocosmos%20Integrated-v0.1.1--alpha.1.1-abc?labelColor=lightblue&color=chartreuse)
+![Static Badge](https://img.shields.io/badge/Astrocosmos%20(universe)-v.4.4.1-abc?labelColor=purple&color=chartreuse)
+![Static Badge](https://img.shields.io/badge/Astrocosmos%20Integrated-v0.2.0--alpha.1.1-abc?labelColor=lightblue&color=chartreuse)
 
 
 </div>
@@ -74,6 +76,8 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 
 > Purpose
 
+## Why Your Stories Matter!
+
 ---
 
 # Features
@@ -96,6 +100,8 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 
 # Releases
 
+## Astrocosmos Integrated
+
 - Public Release
 
 	A stable releases of integrated Astrocosmos's assets and creative contents. Tagged with ***pv***x.y.z.
@@ -114,8 +120,8 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 
 - ./ (root directory)
 	- .github/
-	- files from releases/
-	- Astrocosmos Integrated.exe (Shortcut)
+	- files from the releases/
+	- application from the release.exe (Shortcut)
 	- [LEGAL.md](./LEGAL.md)
 	- [LICENSE.md](./LICENSE.md)
 	- [credits.md](./credits.md) (still important)
