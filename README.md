@@ -25,8 +25,8 @@
 
 ###### Latest Versions:
 
-![Static Badge](https://img.shields.io/badge/Astrocosmos%20(universe)-v.4.3.4-abc?labelColor=purple&color=chartreuse)
-![Static Badge](https://img.shields.io/badge/Astrocosmos%20Integrated-v0.1.1--alpha.1.1-abc?labelColor=lightblue&color=chartreuse)
+![Static Badge](https://img.shields.io/badge/Astrocosmos%20(universe)-v.4.4.1-abc?labelColor=purple&color=chartreuse)
+![Static Badge](https://img.shields.io/badge/Astrocosmos%20Integrated-v0.2.0--alpha.1.1-abc?labelColor=lightblue&color=chartreuse)
 
 
 </div>
@@ -74,6 +74,8 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 
 > Purpose
 
+## Why Your Stories Matter!
+
 ---
 
 # Features
@@ -95,6 +97,8 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 - AstroMagiology (InDev)
 
 # Releases
+
+## Astrocosmos Integrated
 
 - Public Release
 
