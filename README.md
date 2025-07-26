@@ -13,6 +13,8 @@
 [![Static Badge](https://img.shields.io/badge/Roadmap-abc?style=flat&label=Worldbuilding%20Progress!&labelColor=blueviolet&color=chartreuse)](https://github.com/williamskyfurs/Astrocosmos/projects)
 [![Static Badge](https://img.shields.io/badge/Wiki-abc?style=flat&label=The%20Cosmic%20Archive!&labelColor=blueviolet&color=yellow)
 ](https://github.com/williamskyfurs/Astrocosmos/wiki)
+![Static Badge](https://img.shields.io/badge/Angkasawan's%20Citadel-coming%20soon%20...-abc?logo=discord&logoColor=white&labelColor=blueviolet)
+
 
 ###### Important Files:
 
