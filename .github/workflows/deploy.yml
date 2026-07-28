@@ -41,9 +41,9 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Install Quartz plugins
-        run: npx quartz plugin install --latest
+        run: npm run quartz -- plugin install --latest
       - name: Build Quartz
-        run: npx quartz build
+        run: npm run quartz -- build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
