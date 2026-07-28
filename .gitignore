@@ -1,5 +1,16 @@
 # folders
 .brainstorming/
+docs/world_meta/
+.chronicler-cache/
+
+
+
+# ======================================================================== #
+# CLUTTERS                                                                 #
+# ======================================================================== #
+
+*.cdr
+*.ai
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
