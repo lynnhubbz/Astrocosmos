@@ -1,4 +1,4 @@
-from base_templates.base import AstrocosmosID, CelestialObject
+from templates.scripts.base import AstrocosmosID, CelestialObject
 
 class Star(CelestialObject):
     """
