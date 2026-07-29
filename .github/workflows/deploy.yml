@@ -23,6 +23,7 @@ jobs:
           - uses: actions/checkout@v6
 
           # Step 2: Pull the content tree from the main branch into a temporary folder
+          # lorem ipsum
           - name: Checkout content from main branch
             uses: actions/checkout@v6
             with:
