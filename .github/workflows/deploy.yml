@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
           # Step 1: Checkout the Quartz site repository/branch
-          - uses: actions/checkout@v4
+          - uses: actions/checkout@v6
 
           # Step 2: Checkout the main branch lore into the content directory
           - name: Checkout lore content from main branch
