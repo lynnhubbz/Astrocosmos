@@ -22,21 +22,25 @@ jobs:
           # Step 1: Checkout the Quartz site repository/branch
           - uses: actions/checkout@v6
 
-          # Step 2: Pull the lore content from the main branch without colliding with the existing content folder
-          - name: Checkout lore content from main branch
+          # Step 2: Pull the content tree from the main branch into a temporary folder
+          - name: Checkout content from main branch
             uses: actions/checkout@v6
             with:
               ref: main
               path: content-source
-              fetch-depth: 0 # Retains git history so Quartz can read creation/modification dates
+              fetch-depth: 0
 
-          - name: Sync content from main branch
+          - name: Prepare content directory
             run: |
               rm -rf content
               mkdir -p content
-              cp -R content-source/content/. content/
+              if [ -d content-source/content ]; then
+                cp -R content-source/content/. content/
+              else
+                cp -R content-source/. content/
+              fi
 
-          - uses: actions/setup-node@v4
+          - uses: actions/setup-node@v6
             with:
               node-version: 24
 
@@ -79,4 +83,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
