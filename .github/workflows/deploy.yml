@@ -31,15 +31,17 @@ jobs:
               path: main-branch
               fetch-depth: 0
 
+          - name: Debug copied content
+            run: |
+              ls -la main-branch
+              ls -la main-branch/content
+              find main-branch/content -maxdepth 2 -type f | sort
+              find content -maxdepth 2 -type f | sort
+
           - name: Prepare content directory
             run: |
               rm -rf content
-              mkdir -p content
-              if [ -d main-branch/content ]; then
-                cp -a main-branch/content/. content/
-              else
-                cp -a main-branch/. content/
-              fi
+              cp -a main-branch/content content
               rm -rf main-branch
 
           - uses: actions/setup-node@v6
@@ -65,7 +67,10 @@ jobs:
           - name: Install Dependencies
             run: npm ci
 
-          - name: Install Quartz plugins
+          - name: Install Quartz Plugins from config
+            run: npm run quartz -- plugin install --from-config
+            
+          - name: Install Quartz Plugins  latest
             run: npm run quartz -- plugin install --latest
 
           - name: Build Quartz
