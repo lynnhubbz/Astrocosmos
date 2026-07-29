@@ -22,12 +22,24 @@ jobs:
           # Step 1: Checkout the Quartz site repository/branch
           - uses: actions/checkout@v6
 
-          - name: Checkout lore content from main branch
+          # Step 2: Pull the content tree from the main branch into a temporary folder
+          - name: Checkout content from main branch
             uses: actions/checkout@v6
             with:
               ref: main
-              path: content
+              path: main-branch
               fetch-depth: 0
+
+          - name: Prepare content directory
+            run: |
+              rm -rf content
+              mkdir -p content
+              if [ -d main-branch/content ]; then
+                cp -a main-branch/content/. content/
+              else
+                cp -a main-branch/. content/
+              fi
+              rm -rf main-branch
 
           - uses: actions/setup-node@v6
             with:
