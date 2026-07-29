@@ -15,7 +15,7 @@ export async function glob(
     await globby(pattern, {
       cwd,
       ignore: ignorePatterns,
-      gitignore: true,
+      gitignore: false, // @note : make somethign like an exception list for this, because Quartz cant read content/ because it is gitignored
     })
   ).map(toPosixPath)
   return fps as FilePath[]
