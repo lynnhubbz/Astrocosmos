@@ -22,15 +22,21 @@ jobs:
           # Step 1: Checkout the Quartz site repository/branch
           - uses: actions/checkout@v6
 
-          # Step 2: Checkout the main branch lore into the content directory
+          # Step 2: Pull the lore content from the main branch without colliding with the existing content folder
           - name: Checkout lore content from main branch
             uses: actions/checkout@v6
             with:
               ref: main
-              path: content
+              path: content-source
               fetch-depth: 0 # Retains git history so Quartz can read creation/modification dates
 
-          - uses: actions/setup-node@v6
+          - name: Sync content from main branch
+            run: |
+              rm -rf content
+              mkdir -p content
+              cp -R content-source/content/. content/
+
+          - uses: actions/setup-node@v4
             with:
               node-version: 24
 
@@ -43,7 +49,7 @@ jobs:
                 ${{ runner.os }}-node-
 
           - name: Cache Quartz plugins
-            uses: actions/cache@v4
+            uses: actions/cache@v5
             with:
               path: .quartz/plugins
               key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.lock.json') }}
