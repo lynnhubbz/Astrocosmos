@@ -2,7 +2,7 @@
 .brainstorming/
 docs/world_meta/
 .chronicler-cache/
-
+.vscode/settings.json
 
 
 
@@ -13,7 +13,6 @@ docs/world_meta/
 # Quartz
 
 .DS_Store
-.gitignore
 node_modules
 public
 prof
