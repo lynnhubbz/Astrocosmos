@@ -1,0 +1,32 @@
+name: Sync docs to Wiki
+
+on:
+  push:
+    # adjust paths to match where you keep docs, or drop to run on every push
+    paths:
+      - 'docs/**'
+      - 'README.md'
+  workflow_dispatch:
+
+jobs:
+  sync-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Run github-docs-to-wiki
+        uses: jost1x/github-docs-to-wiki@master
+        with:
+          # REQUIRED: create a PAT and store as a repository secret (see notes below)
+          githubToken: ${{ secrets.WIKI_PAT }}
+          # optional: set to 'main' or 'master' depending on your repo
+          defaultBranch: main
+          # optional: directory where your docs live (omit to use repo root)
+          rootDocsFolder: docs
+          # optional: rename README.md -> Home.md in the wiki
+          convertRootReadmeToHomePage: true
+          # optional: example commit message format
+          customCommitMessageFormat: 'Sync docs from {shaShort}: {commitMessage}'
