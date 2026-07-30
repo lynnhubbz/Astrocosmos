@@ -9,3 +9,5 @@
 ## Tools
 
 - [ReedsyStudio](https://reedsy.com/studio/templates/category/worldbuilding/)
+- Nbconvert to write (then make a script to convert all ipynb to md in their respective folder!!!)
+- script to sync folder between branches and auto git it
