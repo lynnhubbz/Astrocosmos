@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Astrocosmos
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -18,7 +18,7 @@ configuration:
     typography:
       header: Schibsted Grotesk
       body: Source Sans Pro
-      code: IBM Plex Mono
+      code: Cascadia Code
     colors:
       lightMode:
         light: "#faf8f8"

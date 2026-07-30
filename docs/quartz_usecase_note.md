@@ -1,11 +1,7 @@
-import path from "path"
-import { FilePath } from "./path"
-import { globby } from "globby"
+Working with orphan branch as a worktree.
+Need some file to be symlinked and gitignored in other file.
 
-export function toPosixPath(fp: string): string {
-  return fp.split(path.sep).join("/")
-}
-
+```javascript
 export async function glob(
   pattern: string,
   cwd: string,
@@ -22,3 +18,4 @@ export async function glob(
   ).map(toPosixPath)
   return fps as FilePath[]
 }
+```
