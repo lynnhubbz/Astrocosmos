@@ -15,17 +15,17 @@
       "textureOpacity": 0.3
     },
     "headingFont": "\"Orbitron\", sans-serif",
-    "bodyFont": "\"IBM Plex Mono\", monospace",
+    "bodyFont": "\"Waukegan LDO\"",
     "fontSize": 100,
     "sidebarWidth": 300,
-    "isTocVisible": true,
+    "isTocVisible": false,
     "areInfoboxTagsVisible": true,
     "areFooterTagsVisible": true,
     "areLinkPreviewsEnabled": true,
     "areMapPreviewsEnabled": true,
     "showImages": true,
-    "showExternalFiles": false,
-    "imageImportLocation": "folder",
+    "showExternalFiles": true,
+    "imageImportLocation": "adjacent",
     "imageImportDir": "images",
     "promptForImageName": false
   }
