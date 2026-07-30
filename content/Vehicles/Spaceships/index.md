@@ -1,3 +1,7 @@
+---
+title: Spaceships (Overview)
+---
+
 ## Spaceship Parts and Compartments
 
 Spaceships can be divided into several compartments based on largely three components (which is payloads, structures, and propulsion bus). 
