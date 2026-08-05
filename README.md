@@ -9,8 +9,6 @@ This repository serves as a creative archive and cloud save for my projects whil
 This repository aim to host information about a worldbuilding project. 
 This also act as a database which will be used for upcoming space renderer
 
-Most of the documents here are hardly-rich formatted Markdown Text. so sadly it will be very hard to read without proper third party extensions
-
 ### History
 
 Astrocosmos was established on **June 25, 2025**—marking the beginning of a universe that fuses science, fiction, and fantasy. The idea originated from a self-made Minecraft modpack consist of [Create](https://modrinth.com/mod/create) and [Valkrien Skies](https://modrinth.com/mod/valkyrien-skies) mods with its main mod are [Cosmic Horizon](https://modrinth.com/mod/cosmic-horizons-cosmos) and [Starlance](https://modrinth.com/mod/starlance). Therefore, a full how and why was made, and ended up as a (mostly) worldbuilding project.
@@ -21,6 +19,8 @@ This repo is compatible with various worldbuilding programs, of course with some
 
 - Chronicler
 
-## License **Summary** (DRAFT)
+## MISC
 
-> "You can't sell The Astrocosmos or its altered source database, BUT you are fully permitted to write, illustrate, and sell your own original books, games, and artwork set within The Project."
+**LICENSE**.
+All Rights Reserved.
+Prominently, DONT USE THIS REPO FOR GENERATIVE AI NOR AI TRAINING.
