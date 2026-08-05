@@ -61,7 +61,7 @@ plugins:
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
     options:
-      enableInHtmlEmbed: false
+      enableInHtmlEmbed: true
       enableCheckbox: true
     order: 30
   - source: "@quartz-community/github-flavored-markdown"
@@ -71,12 +71,14 @@ plugins:
     enabled: true
     order: 50
     layout:
-      position: right
-      priority: 30
+      position: left
+      priority: 70
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
-      markdownLinkResolution: shortest
+      markdownLinkResolution: relative
+      lazyLoad: true
+      externalLinkIcon: true
     order: 60
   - source: "@quartz-community/description"
     enabled: true
@@ -101,9 +103,9 @@ plugins:
   - source: "@quartz-community/quartz-fonts"
     enabled: true
   - source: "@quartz-themes/core"
-    enabled: false
+    enabled: true
     options:
-      theme: tokyo-night
+      theme: glassmind
       mode: both
   - source: "@quartz-community/remove-draft"
     enabled: true
@@ -148,10 +150,10 @@ plugins:
   - source: "@quartz-community/tag-page"
     enabled: true
   - source: "@quartz-community/explorer"
-    enabled: true
-    layout:
-      position: left
-      priority: 50
+    enabled: false
+    # layout:
+    #   position: left
+    #   priority: 50
   - source: "@quartz-community/graph"
     enabled: true
     layout:
@@ -224,7 +226,7 @@ plugins:
         Discord Community: https://discord.gg/cRFFHYye7t
     layout:
       position: footer
-      priority: 50
+      priority: 10
   - source: "@quartz-community/recent-notes"
     enabled: false
   - source: "@quartz-community/spacer"
@@ -256,6 +258,17 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source: github:quartz-community/explorer
+    enabled: true
+    options:
+      folderClickBehavior: link 
+      folderDefaultState: open
+    layout:
+      position: left
+      priority: 100
+      # group: navigation
+      # groupOptions:
+      #   align: stretch
 layout:
   groups:
     toolbar:

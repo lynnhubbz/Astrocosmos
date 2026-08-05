@@ -9,7 +9,9 @@ export function toPosixPath(fp: string): string {
 export async function glob(
   pattern: string,
   cwd: string,
-  ignorePatterns: string[],
+  ignorePatterns: [
+    "content/"
+  ],
 ): Promise<FilePath[]> {
   const fps = (
     await globby(pattern, {

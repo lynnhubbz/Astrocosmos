@@ -1,3 +1,40 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+.tabler-container {
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scrolling on small mobile viewports */
+  margin: 1rem 0;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--bodyFont); /* Uses Quartz default system/body font */
+    font-size: 0.95rem;
+    color: var(--dark); /* Dynamically switches font color based on light/dark mode */
+    background-color: var(--light); /* Inherits site background color */
+  }
+
+  th, td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--lightgray); /* Theme-reactive borders */
+  }
+
+  th {
+    background-color: var(--lightgray); /* Slightly offset background for table headers */
+    color: var(--dark); 
+    font-weight: 600;
+    text-align: left;
+  }
+
+  /* Alternating row colors using CSS color-mix */
+  tr:nth-child(even) {
+    background-color: color-mix(in srgb, var(--lightgray) 30%, transparent); 
+  }
+
+  /* Hover highlighting */
+  tr:hover {
+    background-color: var(--highlight); /* Uses Quartz's active search/text highlight color */
+  }
+}
