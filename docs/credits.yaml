@@ -1,0 +1,62 @@
+metadata:
+  group_legend: |
+    1 for big science, idea, code, support, and tester contributions
+    2 for science contributions
+    3 for idea or code contribution
+    4 for tester or support contributions
+
+contributors:
+  # 2 for science contributions
+  group_2:
+    - name: Apolar
+      social: Discord
+      contribution: for being a great discussion pal to resolve Astrocosmos cosmos astronomy problem!
+
+    - name: Drifa
+      social: Discord
+      contribution: for being a great discussion pal to resolve Astrocosmos astronomy problem!
+
+    - name: FrankLe …
+      social: Discord
+      contribution: for being a great discussion pal to resolve Astrocosmos astronomy problem!
+
+  # 3 for idea or code contribution
+  group_3:
+    - name: Celestia
+      social: Discord
+      contribution: for correcting the capacity of **Corvettes** in the ship classification
+
+    - name: Felix
+      social: Instagram
+      contribution: ""
+
+    - name: Matthew Fawks
+      social: Discord
+      contribution: ""
+
+    - name: Pan
+      social: Discord
+      contribution: for brainstorming the idea of **Wardens** in the ship classification, and registering 'Capybara' vessel
+
+    - name: Zarpaulek
+      social: Discord
+      contribution: ""
+
+  # 4 for tester or support contributions
+  group_4:
+    - name: Caspy
+      social: Discord
+      contribution: for registering 'Aetheria' starcruiser
+
+    - name: Cirro
+      social: Instagram
+      contribution: for registering 'Astra' yacth
+
+    - name: OxideXen
+      social: Discord
+      contribution: for registering 'Oblivion Loom' mobile station and 'Vitreous Fang' light frigate
+
+    - name: Suya
+      social: Discord
+      contribution: for registering 'Catfish' interceptor
+
