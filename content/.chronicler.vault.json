@@ -1,6 +1,6 @@
 {
   "vaultSettings": {
-    "activeTheme": "hologram",
+    "activeTheme": "slate-and-gold",
     "atmosphere": {
       "icons": "core",
       "buttons": "core",
@@ -14,10 +14,11 @@
       "clickEffects": "core",
       "textureOpacity": 0.3
     },
-    "headingFont": "\"Orbitron\", sans-serif",
-    "bodyFont": "\"Waukegan LDO\"",
+    "headingFont": "\"Cinzel\", serif",
+    "bodyFont": "\"Spectral\", serif",
     "fontSize": 100,
     "sidebarWidth": 300,
+    "isSidebarVisible": true,
     "isTocVisible": false,
     "areInfoboxTagsVisible": true,
     "areFooterTagsVisible": true,
