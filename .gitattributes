@@ -1,2 +1,4 @@
-*.md linguist-documentation=false
-*.md linguist-detectable
+content/**/*.md linguist-documentation=false
+content/**/*.md linguist-detectable
+templates/**/*.md linguist-documentation=false
+templates/**/*.md linguist-detectable
