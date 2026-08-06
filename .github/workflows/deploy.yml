@@ -2,9 +2,9 @@ name: Deploy Quartz site to GitHub Pages
  
 on:
   push:
-    branches:
-      - quartz-test
-      - main
+    paths:
+      - 'content/**'
+      - 'README.md'
  
 permissions:
   contents: read
