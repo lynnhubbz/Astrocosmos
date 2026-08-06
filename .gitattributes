@@ -10,4 +10,5 @@ templates/**/*.md linguist-documentation=false
 templates/**/*.md linguist-detectable
 
 # html in content/ must not detected as language, since its used for data and graphic
-content/**/*.html linguist-detectable=false
+content/**/*.html linguist-documentation=true
+content/**/*.html linguist-vendored=true
