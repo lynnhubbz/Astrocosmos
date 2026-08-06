@@ -1,4 +1,13 @@
+# ======================================================================== #
+# MAIN                                                                     #
+# ======================================================================== #
+
+# this is a worldbuilding repository, so document need to be detected as language
+
 content/**/*.md linguist-documentation=false
 content/**/*.md linguist-detectable
 templates/**/*.md linguist-documentation=false
 templates/**/*.md linguist-detectable
+
+# html in content/ must not detected as language, since its used for data and graphic
+content/**/*.html linguist-detectable=false
