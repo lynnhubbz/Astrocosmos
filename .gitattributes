@@ -1,8 +1,9 @@
 # ======================================================================== #
-# MAIN                                                                     #
+# LINGUIST CONFIG                                                          #
 # ======================================================================== #
 
-# this is a worldbuilding repository, so document need to be detected as language
+# this is a worldbuilding repository, 
+# so document about the content need to be detected as language
 
 content/**/*.md linguist-documentation=false
 content/**/*.md linguist-detectable

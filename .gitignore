@@ -1,7 +1,7 @@
 # folders
 .brainstorming/
-docs/world_meta/
 .chronicler-cache/
+content/.chronicler.vault.json
 .vscode/
 
 
