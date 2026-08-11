@@ -1,0 +1,42 @@
+# This is a file containing list of files that are being synced and how are their synced
+
+# for path, use from root to your file, aka "level1/level2/etc"
+
+# ======================================================================== #
+# GLOBAL FALLBACK SETTINGS                                                 #
+# ======================================================================== #
+# (Applies to all jobs unless overridden)
+
+global_settings:
+  placeholder: "<!-- CONTENT_HERE -->"
+  html_template: "templates/data.html"
+  markdown_template: "templates/data.md"
+
+
+
+# jobs parameters:
+#   
+#   - title: # will be used to replace the yaml frontmatter of a markdown `title: {{TITLE}}`, OPTIONAL and will default to the output_markdown file name
+#     source_excel: # define the path of the excel source, REQUIRED throw error without effecting other jobs
+#     output_html: # path to ouput or boolean, OPTIONAL and will default to be put in the same folder as source
+#     output_markdown: # path to output, OPTIONAL and will default to be put in the same folder as source
+#     placeholder: # custom placeholder if you use different template, OPTIONAL and will default to global_settings
+#     html_template: # custom html template if you use different template
+#     markdown_template: # custom markdown template if you use different template 
+
+jobs:
+
+# ======================================================================== #
+# OWNER FILES                                                              #
+# ======================================================================== #
+
+# Ship classification
+  - title: "Ship Classification"
+    source_excel: "content/Vehicles/Spaceships/_data/ship_classification.xlsx"
+    output_markdown: "content/Vehicles/Spaceships/ship_classification.md"
+    output_html: true
+
+
+# ======================================================================== #
+# CONTRIBUTOR FILES                                                        #
+# ======================================================================== #
