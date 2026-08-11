@@ -38,7 +38,7 @@ Spacecrafts includes all type of lightcrafts, gun ships, transports, and one typ
 Spaceship includes two types of cargo ships, all type of construction ships, carriers (and light carriers) and capitals (and light capitals). 
 Semi-stationary includes all types of Mobile Stations and (fixed) stations.
 
-[See here for the classification](./_data/ship_classification.html)
+![[ship_classification.md|See here for the classification]]
 
 ## Spaceships (or Soon-to-be Universal) Secondary Classification
 
