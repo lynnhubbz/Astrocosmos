@@ -11,15 +11,17 @@ This also act as the license's extension
 
 it is recommended to use the existing template to ease yourself and to fullfill the compliance and tidyness.
 
-We currenlty use static site generator, and it is Quartz. Quartz are based on Obsidian markdown, so go learning some obsidian scripts 
 
-if the system, mechanic, or feature of the constructed world you want to reference is not existed yet, you can request it or contribute to create it.
+
+if the Framework of the Constructed World you want to reference is not existed yet, you can request it or contribute to create it.
 
 [Working with non-code files - GitHub Docs](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files)
 
 Non-[] submissions will be considered to as not affecting the main timeline
 
 ### Writing Syntaxes
+
+We currenlty use static site generator, and it is Quartz. Quartz are based on Obsidian markdown, so go learning some obsidian scripts.
 
 Most of the documents here are hardly-rich formatted Markdown Text. so sadly it will be very hard to read without proper third party extensions
 
