@@ -1,2 +1,11 @@
-**.ipynb
-**.xlsx
+# gitignore dedicated for content directory
+
+# notebook
+**/*.ipynb    
+# data
+**/*.xlsx     
+# BrickField save
+**/*.io    
+
+.chronicler-cache/
+.chronicler.vault.json

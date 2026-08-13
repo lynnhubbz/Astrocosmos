@@ -4,8 +4,12 @@ tags:
     - explorerexclude
 ---
 
-<!-- 
+### Legend
 
+<div class="tab-container tab-section-legend">
+  
+<!-- 
+This template is lorem ipsum
 -->
 
 <head>
@@ -16,8 +20,86 @@ tags:
 <div class="table-container"> 
 <table class="tidy-table">
   <tr>
-    <th colspan="15">Classification</th>
-    <th colspan="4">Max Capacity (Pilot&amp;Passenger)</th>
+    <th>Compartment Name</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>flight and control Station</td>
+    <td>CP = "Cockpit"; CD = "Command Deck/Bridge"</td>
+  </tr>
+  <tr>
+    <td>wing</td>
+    <td>(Ordinal): 
+2 = "distinguished wing"; 
+1 = "What resembles some wings"; 
+0 = "no distinguished wing"</td>
+  </tr>
+  <tr>
+    <td>docking port</td>
+    <td>(count)</td>
+  </tr>
+  <tr>
+    <td>CIC</td>
+    <td>(ordinal)</td>
+  </tr>
+  <tr>
+    <td>engine deck</td>
+    <td>(ordinal)</td>
+  </tr>
+  <tr>
+    <td>Astrogation deck</td>
+    <td>(ordinal)</td>
+  </tr>
+  <tr>
+    <td>lobby (life support) deck</td>
+    <td>(ordinal)</td>
+  </tr>
+  <tr>
+    <td>sickbay deck</td>
+    <td>(ordinal)</td>
+  </tr>
+  <tr>
+    <td>emergency deck</td>
+    <td>(ordinal): 
+SE = "Self Eject"; 
+1 = ""; 
+2 = '"</td>
+  </tr>
+  <tr>
+    <td>cargo hold</td>
+    <td>(ordinal)</td>
+  </tr>
+  <tr>
+    <td>hangar bay</td>
+    <td>(count)</td>
+  </tr>
+  <tr>
+    <td>Artificial Gravity</td>
+    <td>(boolean)</td>
+  </tr>
+</table>
+</div>
+</div>
+
+### Classification
+
+<div class="tab-container tab-section-classification">
+  
+<!-- 
+This template is lorem ipsum
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/index.css">
+</head>
+<!-- set the class here so it can be called for theming. for example the class here is "table-container"-->
+<div class="table-container"> 
+<table class="tidy-table">
+  <tr>
+    <th colspan="3">Classification</th>
+    <th colspan="12">Compartments (Determinator)</th>
+    <th colspan="4">Max Capacity ()</th>
     <th colspan="2">Speed:Size Ratio</th>
     <th rowspan="2">Usage (not purpose)</th>
     <th rowspan="2">Usual Size (m)</th>
@@ -846,4 +928,5 @@ tags:
     <td></td>
   </tr>
 </table>
+</div>
 </div>

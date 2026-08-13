@@ -1,0 +1,1 @@
+cards are 5:7
