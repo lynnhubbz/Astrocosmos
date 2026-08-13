@@ -1,6 +1,24 @@
+@use "./base.scss";
 @use "./variables.scss" as *;
-
+@use "sass:map";
 // put your custom CSS here!
+
+// -- Morrowind Modding Wiki SCSS Modules for cooler things-- //
+@use "./custom/infobox-callout.scss";
+@use "./custom/image-adjustments.scss";
+@use "./custom/callout-adjustments.scss";
+@use "./custom/column-callout.scss";
+@use "./custom/caption-callout.scss";
+
+// # @remind CHANGED QUARTZ FEATURE
+
+@media all and ($desktop) {
+  body div#quartz-root.page div#quartz-body {
+    width: min(100%, calc(#{map.get($breakpoints, desktop)} + 700px));
+    max-width: min(100%, calc(#{map.get($breakpoints, desktop)} + 700px));
+    padding: 0 auto;
+  }
+}
 
 .tabler-container {
   width: 100%;
@@ -37,4 +55,174 @@
   tr:hover {
     background-color: var(--highlight); /* Uses Quartz's active search/text highlight color */
   }
+}
+
+
+
+
+
+/* ---------- marquee ---------- */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  border-block: 1px solid var(--lightgray);
+  padding: 0.4rem 0;
+  margin: 0 0 3rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  color: var(--gray);
+}
+.marquee-track {
+  display: inline-flex;
+  width: max-content;
+  animation: marquee-scroll 40s linear infinite;
+}
+@keyframes marquee-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+/* ---------- hero ---------- */
+.landing-title {
+  font-size: clamp(2.5rem, 9vw, 6rem);
+  line-height: 0.95;
+  margin: 0 0 1rem;
+  letter-spacing: -0.03em;
+}
+.landing-sub {
+  font-size: 1rem;
+  color: var(--gray);
+  margin-bottom: 4rem;
+  a { color: var(--secondary); }
+}
+
+/* ---------- issue grid ---------- */
+.issue-grid {
+  display: grid;
+  /* 1. Kept auto-fill so cards stay exactly the size you designed */
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  gap: 1rem;
+  max-width: 80%;
+  
+  // /* 2. Centers the grid tracks horizontally */
+  justify-content: center; 
+  // 
+  // /* 3. Centers the actual cards inside those grid tracks */
+  // justify-items: center;   
+  
+  width: 100%;
+} 
+.issue-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  aspect-ratio: 7 / 5;
+  padding: 1.25rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  background: var(--light);
+  text-decoration: none !important;
+  background-image: none !important;   /* kill Quartz's link underline gradient */
+  color: var(--dark);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.issue-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--secondary);
+}
+.issue-name {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 600;
+}
+.issue-num {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.issue-card.is-soon {
+  border-style: dashed;
+  background: transparent;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* ---------- strip page chrome on the index only ---------- */
+
+body[data-slug="index"] {
+  .sidebar,
+  .sidebar.left,
+  .sidebar.right,
+  div.left.sidebar,
+  div.right.sidebar {
+    display: none !important;
+  }
+
+  #quartz-body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    max-width: none;
+    width: 100%;
+  }
+
+  .center {
+    min-width: 0;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+  }
+
+  .center > article,
+  .popover-hint {
+    max-width: none;
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+
+
+
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*  Infobox callout fix 2: Reset Quartz's default callout box styles specifically for ITS infoboxes */
+.callout[data-callout~="infobox"] {
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  
+  /* Retain grid and layout mechanics for child content elements */
+  & > .callout-content {
+    display: grid;
+    
+    & > :first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+
+/* Theme overrides: dim links and highlights so unhovered text stays readable */
+:root,
+[saved-theme="light"] {
+  --link-color: color-mix(in oklch, var(--accent-color-dark) 70%, transparent);
+  --text-highlight-bg: color-mix(in oklch, var(--accent) 12%, transparent);
+}
+
+[saved-theme="dark"] {
+  --link-color: color-mix(in oklch, var(--accent-color-dark) 70%, transparent);
+  --text-highlight-bg: color-mix(in oklch, var(--accent) 12%, transparent);
 }

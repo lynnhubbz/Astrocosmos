@@ -71,8 +71,9 @@ plugins:
     enabled: true
     order: 50
     layout:
-      position: left
+      position: right
       priority: 70
+      condition: not-index
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
@@ -105,7 +106,8 @@ plugins:
   - source: "@quartz-themes/core"
     enabled: true
     options:
-      theme: glassmind
+      theme: vanilla-palettes
+      variation: catppuccin-mocha
       mode: both
   - source: "@quartz-community/remove-draft"
     enabled: true
@@ -151,20 +153,19 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: false
-    # layout:
-    #   position: left
-    #   priority: 50
   - source: "@quartz-community/graph"
     enabled: true
     layout:
       position: right
       priority: 10
+      condition: not-index
   - source: "@quartz-community/search"
     enabled: true
     layout:
       position: left
       priority: 20
       group: toolbar
+      condition: not-index
       groupOptions:
         grow: true
   - source: "@quartz-community/backlinks"
@@ -177,11 +178,13 @@ plugins:
     layout:
       position: beforeBody
       priority: 10
+      condition: not-index
   - source: "@quartz-community/content-meta"
     enabled: true
     layout:
-      position: beforeBody
-      priority: 20
+      position: right
+      priority: 30
+      condition: not-index
   - source: "@quartz-community/tag-list"
     enabled: false
     layout:
@@ -192,18 +195,21 @@ plugins:
     layout:
       position: left
       priority: 10
+      condition: not-index
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
       position: left
       priority: 30
       group: toolbar
+      condition: not-index
   - source: "@quartz-community/reader-mode"
     enabled: true
     layout:
       position: left
       priority: 35
       group: toolbar
+      condition: not-index
   - source: "@quartz-community/breadcrumbs"
     enabled: true
     layout:
@@ -222,11 +228,12 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        GitHub: https://github.com/lynnhubbz/Astrocosmos
+        Discord Community: https://discord.gg/BY4DnME2J
     layout:
       position: footer
       priority: 10
+      condition: not-index
   - source: "@quartz-community/recent-notes"
     enabled: false
   - source: "@quartz-community/spacer"
@@ -244,12 +251,13 @@ plugins:
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
-      includeAll: false
+      includeAll: true
       includedProperties:
         - description
         - tags
-        - aliases
-      excludedProperties: []
+      excludedProperties:
+        - modified
+        - title
       hidePropertiesView: false
       delimiters: ---
       language: yaml
@@ -258,17 +266,22 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  - source: github:quartz-community/explorer
+      condition: not-index
+  - source: github:quartz-community/explorer # @remind CHANGED QUARTZ FEATURE
     enabled: true
     options:
-      folderClickBehavior: link 
+      folderClickBehavior: link
       folderDefaultState: open
     layout:
       position: left
       priority: 100
-      # group: navigation
-      # groupOptions:
-      #   align: stretch
+      condition: not-index
+  - source: github:vazome/quartz-image-zoom # @remind CHANGED QUARTZ FEATURE
+    enabled: true
+    options:
+      condition: not-index
+    order: 50
+      
 layout:
   groups:
     toolbar:
@@ -285,8 +298,6 @@ layout:
     folder:
       exclude:
         - reader-mode
-      positions:
-        right: []
     tag:
       exclude:
         - reader-mode

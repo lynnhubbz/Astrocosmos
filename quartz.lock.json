@@ -6,6 +6,12 @@
       "resolved": "https://github.com/quartz-community/explorer.git",
       "commit": "06ea3d8e206f0edaab08556191adc75b2403e832",
       "installedAt": "2026-08-05T00:08:22.833Z"
+    },
+    "quartz-image-zoom": {
+      "source": "github:vazome/quartz-image-zoom",
+      "resolved": "https://github.com/vazome/quartz-image-zoom.git",
+      "commit": "eb516f150d95859c31c1fa5507f2fd81b35bbb15",
+      "installedAt": "2026-08-13T10:32:51.176Z"
     }
   }
 }
