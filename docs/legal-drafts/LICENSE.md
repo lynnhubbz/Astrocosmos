@@ -180,7 +180,7 @@ when, and only when, they appear in uppercase.
 
 > [MOVED TO CODE_OF_CONDUCT.md ??] Use this if done:
 > 
-> confused about this section
+>  And, subject to the conditions specified in our code of conduct
 
 1. This document shall be included in all copies or modified versions of This Project.
 
