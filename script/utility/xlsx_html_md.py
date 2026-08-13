@@ -43,24 +43,11 @@ def load_pipeline_configuration():
     jobs = config.get("jobs", [])
     return global_settings, jobs
 
-
-def excel_to_html_with_merged_cells(excel_path):
+def parse_sheet_to_html(ws):
     """
-    Parses an Excel sheet using openpyxl directly, explicitly converting 
-    merged cell ranges into clean, semantic HTML 'colspan' and 'rowspan' attributes.
+    HEAVY LIFTING WORKER: Converts a single sheet object (ws) into an HTML table.
+    This contains your original openpyxl merged-cell parsing logic.
     """
-    if not os.path.exists(excel_path):
-        print(f" -> Execution Error: Source Excel file missing: '{excel_path}'")
-        return ""
-
-    try:
-        # Load workbook with data_only=True to evaluate formula results rather than parsing raw equations
-        wb = openpyxl.load_workbook(excel_path, data_only=True)
-        ws = wb.active
-    except Exception as e:
-        print(f" -> Execution Error: Failed to open Excel file '{excel_path}': {e}")
-        return ""
-    
     top_left_cells = {}
     hidden_cells = set()
     
@@ -69,11 +56,8 @@ def excel_to_html_with_merged_cells(excel_path):
         min_col, min_row, max_col, max_row = merged_range.bounds
         rowspan = max_row - min_row + 1
         colspan = max_col - min_col + 1
-        
-        # Track principal top-left coordinates holding the content span attributes
         top_left_cells[(min_row, min_col)] = (rowspan, colspan)
         
-        # Log all secondary hidden cells inside the merge blocks to bypass later
         for r in range(min_row, max_row + 1):
             for c in range(min_col, max_col + 1):
                 if r == min_row and c == min_col:
@@ -82,7 +66,6 @@ def excel_to_html_with_merged_cells(excel_path):
                 
     # 2. Rebuild structural HTML lines cleanly cell by cell
     html_lines = ['<table class="tidy-table">']
-    
     for r in range(1, ws.max_row + 1):
         html_lines.append('  <tr>')
         for c in range(1, ws.max_column + 1):
@@ -95,15 +78,12 @@ def excel_to_html_with_merged_cells(excel_path):
             attrs = []
             if (r, c) in top_left_cells:
                 rowspan, colspan = top_left_cells[(r, c)]
-                if rowspan > 1:
-                    attrs.append(f'rowspan="{rowspan}"')
-                if colspan > 1:
-                    attrs.append(f'colspan="{colspan}"')
+                if rowspan > 1: attrs.append(f'rowspan="{rowspan}"')
+                if colspan > 1: attrs.append(f'colspan="{colspan}"')
                     
             attr_str = " " + " ".join(attrs) if attrs else ""
             tag = 'th' if r == 1 else 'td'
             
-            # Escape unsafe characters to preserve literal layout code strings cleanly
             escaped_val = str(val).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
             html_lines.append(f'    <{tag}{attr_str}>{escaped_val}</{tag}>')
         html_lines.append('  </tr>')
@@ -114,90 +94,102 @@ def excel_to_html_with_merged_cells(excel_path):
 
 def run_single_job_pipeline(job, global_settings):
     """
-    Runs the full conversion pipeline for an individual job object matching your target key layout.
-    Throws a clean console log error if 'source_excel' is missing without affecting alternative jobs.
+    CONTROLLER: Loops through all tabs, stacks them with ### Headings, 
+    and inserts the complete multi-table block into your templates.
     """
-    # 1. Validate the REQUIRED source excel parameter
     source_excel = job.get("source_excel")
     if not source_excel:
-        print(" [!] Execution Error: 'source_excel' path key is REQUIRED. Skipping this specific job item.")
+        print(" [!] Execution Error: 'source_excel' path key is REQUIRED. Skipping.")
         return
 
-    # Parse baseline filesystem naming configurations out of the excel path
+    if not os.path.exists(source_excel):
+        print(f" -> Execution Error: Source Excel file missing: '{source_excel}'")
+        return
+
     excel_dir = os.path.dirname(source_excel) or "."
     excel_base_name = os.path.splitext(os.path.basename(source_excel))[0]
 
-    # 2. Resolve OPTIONAL path destinations with positional fallback overrides
     output_markdown = job.get("output_markdown")
     if not output_markdown:
         output_markdown = os.path.join(excel_dir, f"{excel_base_name}.md")
 
-    # Resolve Title replacement variables
-    resolved_title = job.get("title")
-    if not resolved_title:
-        resolved_title = os.path.splitext(os.path.basename(output_markdown))[0]
-
-    # Resolve template settings matching your fallback structure
+    resolved_title = job.get("title") or os.path.splitext(os.path.basename(output_markdown))[0]
     html_template_file = job.get("html_template", global_settings.get("html_template", "html_template.html"))
     markdown_template_file = job.get("markdown_template", global_settings.get("markdown_template", "template.md"))
     placeholder = job.get("placeholder", global_settings.get("placeholder", "<!-- TABLE_PLACEHOLDER -->"))
-    
-    # Process dynamic output configuration criteria
     output_html_cfg = job.get("output_html")
 
-    print(f" -> Processing Target File Path: '{source_excel}'")
+    print(f" -> Processing Multi-Tab File: '{source_excel}'")
     
     try:
-        # STEP 1: Parse table layout parameters out of the workbook sheets
-        html_table_element = excel_to_html_with_merged_cells(source_excel)
-        if not html_table_element:
-            return
-
-        # STEP 2: Splicing data elements into the designated outer template wrapper
-        if not os.path.exists(html_template_file):
-            print(f"    [!] Structural Error: HTML template wrapper missing at '{html_template_file}'")
+        # Load the workbook framework
+        wb = openpyxl.load_workbook(source_excel, data_only=True)
+        
+        # Verify templates exist before running the loops
+        if not os.path.exists(html_template_file) or not os.path.exists(markdown_template_file):
+            print("    [!] Structural Error: HTML or Markdown template path is missing.")
             return
 
         with open(html_template_file, "r", encoding="utf-8") as html_temp:
             html_layout_blueprint = html_temp.read()
 
-        if placeholder not in html_layout_blueprint:
-            print(f"    [!] Warning: Marker '{placeholder}' missing inside template '{html_template_file}'")
+        # Storage lists for the compiled tabs
+        compiled_html_blocks = []
+        compiled_markdown_blocks = []
 
-        fully_wrapped_html = html_layout_blueprint.replace(placeholder, html_table_element)
-        
-        # Evaluate conditional HTML writing targets
+        # --- NEW CODE: LOOP THROUGH ALL WORKBOOK TABS ---
+        for sheet_name in wb.sheetnames:
+            ws = wb[sheet_name]
+            
+            # Skip empty tabs completely so your output stays tidy
+            if ws.max_row <= 1 and ws.max_column <= 1 and ws.cell(row=1, column=1).value is None:
+                continue
+                
+            # 1. Generate the isolated HTML <table> element block
+            html_table_element = parse_sheet_to_html(ws)
+            
+            # 2. Wrap it inside your specific custom container layout blueprint
+            fully_wrapped_html = html_layout_blueprint.replace(placeholder, html_table_element)
+            
+            # Sanitize the sheet name to make a clean layout hook CSS class (e.g., "Sheet 1" -> "sheet_1")
+            safe_css_class = sheet_name.lower().replace(" ", "_")
+            
+            # 3. Create the HTML compilation chunk
+            html_chunk = f'<!-- START SECTION: {sheet_name} -->\n<div class="tab-container tab-section-{safe_css_class}">\n  {fully_wrapped_html}\n</div>\n<!-- END SECTION -->\n'
+            compiled_html_blocks.append(html_chunk)
+            
+            # 4. Create the Markdown compilation chunk with your requested Level 3 heading separator
+            md_chunk = f'### {sheet_name}\n\n<div class="tab-container tab-section-{safe_css_class}">\n  {fully_wrapped_html}\n</div>\n'
+            compiled_markdown_blocks.append(md_chunk)
+
+        if not compiled_markdown_blocks:
+            print("    -> Warning: All sheets were completely empty. Output skipped.")
+            return
+
+        # --- SAVE THE COMBINED STANDALONE HTML FILE ---
         html_out_path = None
         if output_html_cfg is None or (isinstance(output_html_cfg, bool) and output_html_cfg):
-            # Omitted or explicitly True: default to saving in same folder as excel source
             html_out_path = os.path.join(excel_dir, f"{excel_base_name}.html")
         elif isinstance(output_html_cfg, str) and output_html_cfg.strip():
-            # Explicit string destination path specified
             html_out_path = output_html_cfg
 
         if html_out_path:
             with open(html_out_path, "w", encoding="utf-8") as html_out:
-                html_out.write(fully_wrapped_html)
+                # Merge all individual wrapped HTML tables into one document block string
+                html_out.write("\n<br>\n".join(compiled_html_blocks))
             print(f"    -> Mirror Generated successfully -> '{html_out_path}'")
 
-        # STEP 3: Read Markdown layout template and swap out variables safely
-        if not os.path.exists(markdown_template_file):
-            print(f"    [!] Structural Error: Markdown base template missing at '{markdown_template_file}'")
-            return
-
+        # --- SAVE THE FINAL DOCUMENTATION MARKDOWN FILE ---
         with open(markdown_template_file, "r", encoding="utf-8") as md_temp:
             markdown_blueprint = md_temp.read()
 
-        if placeholder not in markdown_blueprint:
-            print(f"    [!] Warning: Marker '{placeholder}' missing inside template '{markdown_template_file}'")
-
-        # Splicing HTML blocks inside the markdown placeholder zone
-        final_markdown_payload = markdown_blueprint.replace(placeholder, fully_wrapped_html)
-
-        # FRONTMATTER REPLACEMENT: Replace 'title: {{TITLE}}' text literal safely
+        # Combine all Markdown/Heading blocks together
+        all_tables_markdown_string = "\n".join(compiled_markdown_blocks)
+        
+        # Inject everything into the parent Markdown documentation file template
+        final_markdown_payload = markdown_blueprint.replace(placeholder, all_tables_markdown_string)
         final_markdown_payload = final_markdown_payload.replace("title: {{TITLE}}", f"title: {resolved_title}")
 
-        # Export completed results out to disk locations safely
         output_dir = os.path.dirname(output_markdown)
         if output_dir and not os.path.exists(output_dir):
             os.makedirs(output_dir, exist_ok=True)
