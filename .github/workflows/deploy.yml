@@ -45,6 +45,7 @@ jobs:
         run: |
           rm -rf content
           cp -a main-branch/content content
+          cp -a main-branch/assets content/_assets
           rm -rf main-branch
 
       - uses: actions/setup-node@v6
