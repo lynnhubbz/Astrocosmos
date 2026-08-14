@@ -72,7 +72,7 @@ plugins:
     order: 50
     layout:
       position: right
-      priority: 70
+      priority: 10
       condition: not-index
   - source: "@quartz-community/crawl-links"
     enabled: true
@@ -106,8 +106,8 @@ plugins:
   - source: "@quartz-themes/core"
     enabled: true
     options:
-      theme: vanilla-palettes
-      variation: catppuccin-mocha
+      theme: "its-theme"
+      variation: "blue"
       mode: both
   - source: "@quartz-community/remove-draft"
     enabled: true
@@ -157,7 +157,7 @@ plugins:
     enabled: true
     layout:
       position: right
-      priority: 10
+      priority: 100
       condition: not-index
   - source: "@quartz-community/search"
     enabled: true
@@ -183,7 +183,7 @@ plugins:
     enabled: true
     layout:
       position: right
-      priority: 30
+      priority: 500
       condition: not-index
   - source: "@quartz-community/tag-list"
     enabled: false
@@ -235,7 +235,9 @@ plugins:
       priority: 10
       condition: not-index
   - source: "@quartz-community/recent-notes"
-    enabled: false
+    enabled: true
+    layout:
+      position: []
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
@@ -281,7 +283,13 @@ plugins:
     options:
       condition: not-index
     order: 50
-      
+
+  - source: "./quartz/plugins/inline-recent"
+    enabled: true
+    options:
+      title: "Latest Feed Updates"
+      limit: 10
+      showTags: false
 layout:
   groups:
     toolbar:
