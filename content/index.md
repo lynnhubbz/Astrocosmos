@@ -29,6 +29,22 @@ It blends science fiction with fantasy, and connects various pop culture [].
 
 Astrocosmos lorem ipsum ..
 
+<div class="grid-wrapper">
+  <!-- Left Column -->
+  <div>
+    Left Content UwU
+  </div>
+  
+  <!-- Right Column -->
+  <div>
+    <recent-notes></recent-notes>
+  </div>
+</div>
+
+
+... or explore more ...
+
+
 <div class="issue-grid">
 
   <a class="issue-card" href="/Locations">
@@ -56,6 +72,9 @@ Astrocosmos lorem ipsum ..
   </a>
 
 </div>
+
+
+
 
 ---
 
