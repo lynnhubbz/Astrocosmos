@@ -1,6 +1,7 @@
 ---
 title: Malashore
-
+tags:
+    - category/planets
 ---
 
 
