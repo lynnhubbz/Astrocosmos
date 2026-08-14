@@ -1,0 +1,12 @@
+{
+  "name": "quartz-inline-recent",
+  "version": "1.0.0",
+  "description": "Embeds recent notes anywhere inside markdown files using shortcode tags.",
+  "main": "index.ts",
+  "type": "module",
+  "quartz": {
+    "category": [
+      "transformer"
+    ]
+  }
+}
