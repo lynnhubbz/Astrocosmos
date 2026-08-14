@@ -31,6 +31,7 @@ This repo is compatible with various worldbuilding programs, of course with some
 
 - Chronicler
 - Timelines
+- ChartedRoots
 
 ## How To Interact With This Project
 
