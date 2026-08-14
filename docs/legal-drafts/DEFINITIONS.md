@@ -1,4 +1,8 @@
-The words of which the initial letter is capitalized have meanings defined below. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural. Thus, for the purposes of these License:
+---
+VERSION: draft
+---
+
+The words of which the initial letter is capitalized have meanings defined below. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural. Thus, for the purposes of these legal documents:
 
 <!-- Perspective Words -->
 
@@ -21,7 +25,8 @@ The resulting world may be called a **"Constructed World"**
 
 **"Software Utility"**
 is part of Project which includes, but are not limited to:
-programming code, scripts, or software; which usually used as helper/utility to implement/support the Framework, Entry, or the whole project.
+programming code, scripts, or software; 
+which are usually used as helper/utility to implement/support the Framework, Entry, or the whole project.
 
 **"Content"** 
 is part of Project which includes every thing that builds the Constructed World.
@@ -40,6 +45,10 @@ that represents a specific, instantiated lore element, record, or codex item wit
 (including, but not limited to: specific characters, planets, species, factions, historical events, technologies, or locations). 
 Analogically, an object/instance of Framework
 
+If a Framework document describes a mechanic (e.g., "ships have three hull-integrity tiers") 
+and a Software Utility implements a calculator for that mechanic, 
+thus the description is Content and the calculator code is Software Utility — even though they're related.
+
 **"Creative Work"** 
 includes, but not limited to: 
 novels, short stories, comics, digital artwork, physical prints, 
@@ -48,7 +57,7 @@ Creative Works which submitted as a Contribution depicting existing or concurren
 and it is part of the Project.
 Meanwhile, 
 Creative Works which set in the Constructed World that are not submitted as Contribution, 
-and do not depict a specific Entry or Framework element as canon are called **"Independent Work"**
+and do not depict a specific Entry or Framework element as canon are called **"Independent Work"**.
 
 <!-- Verbal Noun -->
 

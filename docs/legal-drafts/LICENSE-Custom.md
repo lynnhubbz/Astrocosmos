@@ -171,10 +171,7 @@ when, and only when, they appear in uppercase.
 
 #### A. Under these following terms below:
 
-1. You MAY append The Project's name as a descriptor or subtitle for Your Creative Work (e.g., *Starfall: An Astrocosmos Story*), but You MAY NOT use it as the primary standalone title or present Your work as an official release, UNLESS You are the Owner of The Project.
-
-<!-- i intended this below to: attribute the author of entry/framework/depictivework you use, or at least state that entry/framework/depictivework you use is from the Project -->
-2. You MUST **give appropriate credit**. Attribution may be provided by crediting the Project and, it is RECOMMENDED to identify the relevant contributors or Contributions. You may do so in any reasonable manner, but not in any way that suggests the Project endorses You or Your use. 
+1. You MUST **give appropriate credit**. Attribution may be provided by crediting the Project and, it is RECOMMENDED to identify the relevant contributors or Contributions. You may do so in any reasonable manner, but not in any way that suggests the Project endorses You or Your use. 
 
 #### B. And, Subject to the following strict conditions:
 
