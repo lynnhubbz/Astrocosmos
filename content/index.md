@@ -4,8 +4,6 @@ cssclasses:
   - landing
 ---
 
-<!-- @todo make headings really aligned at center -->
-
 <div align=center>
 
 <img src="_assets/logos/Logo Title Colored v2.png" class=center-image>
@@ -32,7 +30,11 @@ Astrocosmos lorem ipsum ..
 <div class="grid-wrapper">
   <!-- Left Column -->
   <div>
-    Left Content UwU
+
+### NEWS
+
+**Will be updated extremely slowly cuz of college and unfinished promises QwQ**
+
   </div>
   
   <!-- Right Column -->

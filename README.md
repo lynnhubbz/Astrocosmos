@@ -10,6 +10,10 @@ Astrocosmos is collaborative galactic-scale worldbuilding project.
 This repository serves as a creative archive and cloud save for this project.
 [] collaborators to help refine, expand, and reimagine the universe.
 
+### NEWS
+
+**Will be updated extremely slowly cuz of college and unfinished promises QwQ**
+
 ### History
 
 Astrocosmos was established on **June 25, 2025**—marking the beginning of a universe that fuses science, fiction, and fantasy. The idea originated from a self-made Minecraft modpack consist of [Create](https://modrinth.com/mod/create) and [Valkrien Skies](https://modrinth.com/mod/valkyrien-skies) mods with its main mod are [Cosmic Horizon](https://modrinth.com/mod/cosmic-horizons-cosmos) and [Starlance](https://modrinth.com/mod/starlance). Therefore, a full how and why was made, and ended up as a (mostly) worldbuilding project.
