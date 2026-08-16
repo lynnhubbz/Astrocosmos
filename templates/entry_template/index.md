@@ -11,17 +11,9 @@ title:
 <!-- INTRODUCTION                                                        -->
 <!-- =================================================================== -->
 
-### Summary
-
-%% As introduction and preface.
-%% Summarizing table of contents
-
 ## Description
 
 %% Put description here.
-
-It is recomennded to compare things to real life.  
-Put this explanation on 
 
 ## History
 
@@ -31,11 +23,7 @@ Put this explanation on
 <!-- DETAILS                                                             -->
 <!-- =================================================================== -->
 
-## </ Include detailed sections here>
-
-## etc
-
-## </ Taxonomy if included>
+{{DETAILS}}
 
 ---
 
@@ -56,7 +44,7 @@ Put this explanation on
 ||
 
 <!-- =================================================================== -->
-<!-- FOR NON-ENTRY CONTENTS                                              -->
+<!-- FOR FRAMEWORK CONTENTS                                              -->
 <!-- =================================================================== -->
 
 ## Making Your Own
