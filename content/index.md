@@ -49,27 +49,27 @@ Astrocosmos lorem ipsum ..
 
 <div class="issue-grid">
 
-  <a class="issue-card" href="/Locations">
+  <a class="issue-card" href="./Locations">
     <span class="issue-name">Locations</span>
   </a>
 
-  <a class="issue-card" href="/Creatures">
+  <a class="issue-card" href="./Creatures">
     <span class="issue-name">Creatures</span>
   </a>
 
-  <a class="issue-card" href="/Vehicles">
+  <a class="issue-card" href="./Vehicles">
     <span class="issue-name">Vehicles</span>
   </a>
 
-  <a class="issue-card" href="/Timelines">
+  <a class="issue-card" href="./Timelines">
     <span class="issue-name">Timeline</span>
   </a>
 
-  <a class="issue-card" href="/Divinity">
+  <a class="issue-card" href="./Divinity">
     <span class="issue-name">Gods & Deities</span>
   </a>
 
-  <a class="issue-card" href="/Characters">
+  <a class="issue-card" href="./Characters">
     <span class="issue-name">Characters</span>
   </a>
 

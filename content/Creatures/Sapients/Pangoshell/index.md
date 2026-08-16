@@ -5,6 +5,6 @@ tags:
     - category/sapients
 ---
 
-Pangoshell's homeworld is the Planet [Malashore](../../../Locations/Physical/Star-Malashore/Planet-Malashore)
+Pangoshell's homeworld is the Planet [[../../../Locations/Physical/Star-Malashore/Planet-Malashore|Malashore]]
 
 ##

@@ -6,4 +6,4 @@ tags:
 
 
 
-Malashore is the homeworld planet of the species [Pangoshell](../../../../Creatures/Sapients/Pangoshell)
+Malashore is the homeworld planet of the species [[../../../../Creatures/Sapients/Pangoshell|Pangoshell]].
