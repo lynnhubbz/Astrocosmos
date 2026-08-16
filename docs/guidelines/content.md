@@ -15,9 +15,13 @@ it is recommended to use the existing template to ease yourself and to fullfill 
 
 if the Framework of the Constructed World you want to reference is not existed yet, you can request it or contribute to create it.
 
-[Working with non-code files - GitHub Docs](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files)
+Non-[] submissions will be considered to as not affecting the main timeline.
 
-Non-[] submissions will be considered to as not affecting the main timeline
+If you borrow/reference/use a framework, be sure to make it as a link or make it obivous, so that others especially manager easy to spot/match your entry whenever there are retcons or major changes
+
+Write the content in omniscient first then perspective second. write perspectival if necessary in callouts or part of the canon as direct body
+
+Be sure to fullfill the criteria stated in [...]
 
 ### Writing Syntaxes
 
@@ -30,12 +34,18 @@ Most of the documents here are hardly-rich formatted Markdown Text. so sadly it 
 - Detailed and Complicated tabular information should be written in html
 
 
+## Submitting your Entry
+
+> We still confused about the placement of submitted entries: should it be put in the submission folder? or could it be put in their respective folder?
+
+We only accept that fullfilled our criteria stated in [...]
+
 ### Method of submission
 
 ### Stage of submission
 
 0. Pull request, submission channel, etc
-1. No suspicious file, be put in submission folder (Stardust)
+1. No suspicious file, be put in submission folder (Stardust) ???
 2. Under review of an admin, (Nebula)
 3. be put in proper catalogue
 4. someting ...

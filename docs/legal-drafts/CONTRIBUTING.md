@@ -37,6 +37,8 @@ Because this is a collaborative worldbuilding project, you must understand and a
 
 %% for multi-author contributing
 
+
+
 ## Method of Contributions
 
 Github Issue used for:
@@ -49,3 +51,9 @@ well, discussion, and comments on the wiki
 
 Github Pull Request for: 
 submitting Entries or large Contents
+
+
+
+## Worlflow of Contributions
+
+are detailed in separate documents
