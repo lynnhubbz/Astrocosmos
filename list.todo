@@ -12,4 +12,14 @@ Research:
 ☐ How can we use antivirus on pullrequests?
 ☐ community standards
 ☐ Auto generate discussion when a pullrequest is merged
+    ✔ GISCUS! @done (8/16/2026, 5:06:34 PM)
+    ☐ but need to have to be put in certain category rather than one
 ☐ File sync script
+    ✔ Excel @done (8/16/2026, 5:06:38 PM)
+☐ Emojize documents
+☐ Quartz plugin to view previous git tag
+☐ unified submission directory. blank Folder with script that read yml file to copy/sync its content to their respective folder
+    ☐ Make a blank yml list
+    ☐ Make a script to sync
+        ☐ the script must fix the links inside the docs
+☐ Make ASTROCOSMOS submission available for non-programmers

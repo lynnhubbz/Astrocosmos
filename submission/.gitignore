@@ -1,0 +1,5 @@
+*
+!.gitignore
+
+!list.default.yaml
+!README.md

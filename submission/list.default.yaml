@@ -1,0 +1,9 @@
+# MAKE SURE YOU COPY the `list.default.yaml` and rename the copy into `list.yaml`
+#
+# job items:
+# copyFROM = the folder you want to copy
+# pasteINTO = the it into the directory in `content/` where your entry should be
+
+jobs:
+  - copyFROM: "/submission/.."
+    pasteINTO: "/content/.."
