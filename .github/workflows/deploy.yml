@@ -73,9 +73,6 @@ jobs:
 
       - name: Install Quartz Plugins from config
         run: npm run quartz -- plugin install --from-config
-        
-      - name: Install Quartz Plugins  latest
-        run: npm run quartz -- plugin install --latest
 
       - name: Build Quartz
         run: npm run quartz -- build
