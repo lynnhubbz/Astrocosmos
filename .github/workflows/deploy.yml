@@ -48,6 +48,16 @@ jobs:
           cp -a main-branch/assets content/_assets
           rm -rf main-branch
 
+      - name: Check for case-duplicate content paths
+        run: |
+          dupes=$(find content -mindepth 1 -printf '%P\n' \
+                  | tr 'A-Z' 'a-z' | sort | uniq -d)
+          if [ -n "$dupes" ]; then
+            echo "::error::Case-duplicate paths in content tree:"
+            echo "$dupes"
+            exit 1
+          fi
+
       - uses: actions/setup-node@v6
         with:
           node-version: 24
@@ -76,6 +86,16 @@ jobs:
 
       - name: Build Quartz
         run: npm run quartz -- build
+
+      - name: Check for case-duplicate output paths
+        run: |
+          dupes=$(find public -mindepth 1 -printf '%P\n' \
+                  | tr 'A-Z' 'a-z' | sort | uniq -d)
+          if [ -n "$dupes" ]; then
+            echo "::error::Case-duplicate paths in build output:"
+            echo "$dupes"
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
