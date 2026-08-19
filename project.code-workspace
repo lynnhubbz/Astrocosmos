@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+        "name": "📦 Project Root",
+        "path": "."
+        },
+        {
+        "name": "📝 Content Root",
+        "path": "content"
+        }
+    ],
+    "settings": {}
+}
