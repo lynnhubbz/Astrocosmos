@@ -1,4 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+
+# need to put page listing after backlinks and before discussions
 configuration:
   pageTitle: Astrocosmos
   pageTitleSuffix: ""
@@ -171,8 +173,8 @@ plugins:
   - source: "@quartz-community/backlinks"
     enabled: true
     layout:
-      position: right
-      priority: 50
+      position: afterBody
+      priority: 10
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
@@ -223,7 +225,7 @@ plugins:
       options: {}
     layout:
       position: afterBody
-      priority: 10
+      priority: 100
   - source: "@quartz-community/footer"
     enabled: true
     options:
