@@ -133,6 +133,18 @@ hr {
   
 }
 
+@media all and (min-width: 801px) { //desktop environment only @remind fix collapsible
+  .explorer.collapsed,
+  .toc:has(> .toc-header.collapsed) {
+    flex: 0 0 auto;
+  }
+
+  .explorer.collapsed > .explorer-content,
+  .toc > .toc-content.collapsed {
+    display: none;
+  }
+}
+
 
 /* ====================================================================== */
 /* PAGE RESIZE SO IT TAKES WHOLE SCREEN                                   */
