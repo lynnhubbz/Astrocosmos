@@ -1,6 +1,3 @@
 # Using Git in this project
 
-main = main development
-quartz-test = static site generator branch
-
-commit message following conventional commit for now
+Please refer to [git specification](./git_specification/README.md) for the base of this guide.

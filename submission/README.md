@@ -1,8 +1,9 @@
 This folder gitignores all the contents except: 
-- `list.default.yaml`
+- `watchlist.default.yaml`
+- `xlsxTOtables.default.yaml`
 - `README.md`
 - `.gitignore`
 
 So it doesnt and shouldnt track your local edits, while the yaml get updated
 
-copy the `list.default.yaml` and rename the copy into `list.yaml`
+copy the `watchlist.default.yaml` and rename the copy into `watchlist.yaml`

@@ -52,3 +52,71 @@ gitGraph
     merge retcon-branch id: "Merge PR #45: Grand FTL Overhaul"
     commit id: "v1.0-Release-Snapshot" tag: "v1.0"
 ~~~
+
+## Making template and how tempalte is used
+
+~~~mermaid
+flowchart TD
+    A[Gather Information]
+    B[Pydantic]
+    C[TOML Template]
+    D[TOML Data]
+
+    %% Operational Steps using safe string padding to prevent parse errors
+    X[" "]
+    Y[" "]
+
+    A -->|Apply / induce it as| B
+    B -->|Generate empty TOML as template| C
+
+    %% Clean structural convergence for the update loop
+    B -->|Update structure| X
+    C -->|Map & move keys| X
+    X --> C
+
+    %% Clean structural convergence for the final data filling
+
+    C ==>|Non-programmer user fill in| D
+    C -->|Provide template| Y
+    B ==>|Generate data| Y
+    Y ==> D
+
+    %% Color the lines in the final section green (indices 5, 6, 7, and 8)
+    
+    %% maintainer
+    linkStyle 0,1,2,4 stroke:#ff0000
+
+    %% user
+    linkStyle 5,7,8 stroke:#22c55e
+~~~
+Legend: 
+    green = user workflow  
+    red = maintainer workflow
+
+## Making a celestial systems
+
+~~~mermaid
+flowchart LR
+    subgraph A["Build"]
+    direction LR
+
+        BuilderOrogen["Orogen"]
+        Lagrange
+        Terraforge["Terraforge (Builder)"]
+
+    end
+    
+    A --> B
+
+    subgraph B[Place]
+    direction RL
+        PlacerTerraforge["Terraforge"]
+    end
+
+    B -- translate to Celestia --> Celestia
+    
+    subgraph C[Visualize]
+    direction RL
+        Celestia
+    end
+~~~

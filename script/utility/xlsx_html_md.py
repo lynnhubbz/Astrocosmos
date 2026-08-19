@@ -20,7 +20,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 # --- CONFIGURATION PATH ---
-CONFIG_FILE_PATH = "script/utility/watchlist_xlsx.yaml"
+CONFIG_FILE_PATH = "submission/watchlist_xlsx.yaml"
 
 
 def load_pipeline_configuration():

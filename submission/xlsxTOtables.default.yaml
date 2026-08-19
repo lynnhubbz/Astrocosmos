@@ -1,6 +1,8 @@
 # This is a file containing list of files that are being synced and how are their synced
 
 # for path, use from root to your file, aka "level1/level2/etc"
+#
+# The workflow is either sync the excel in the submission folder, or sync the excel in the content folder
 
 # ======================================================================== #
 # GLOBAL FALLBACK SETTINGS                                                 #
@@ -24,17 +26,17 @@ global_settings:
 #     html_template: # custom html template if you use different template
 #     markdown_template: # custom markdown template if you use different template 
 
+
+# Example
+  # - title: "Ship Classification"
+  #   source_excel: "content/Vehicles/Spaceships/_data/ship_classification.xlsx"
+  #   output_markdown: "content/Vehicles/Spaceships/ship_classification.md"
+  #   output_html: true
+
+
 jobs:
 
-# ======================================================================== #
-# OWNER FILES                                                              #
-# ======================================================================== #
 
-# Ship classification
-  - title: "Ship Classification"
-    source_excel: "content/Vehicles/Spaceships/_data/ship_classification.xlsx"
-    output_markdown: "content/Vehicles/Spaceships/ship_classification.md"
-    output_html: true
 
 
 # ======================================================================== #

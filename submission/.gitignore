@@ -1,5 +1,6 @@
 *
 !.gitignore
 
-!list.default.yaml
+!watchlist.default.yaml
+!xlsxTOtables.default.yaml
 !README.md

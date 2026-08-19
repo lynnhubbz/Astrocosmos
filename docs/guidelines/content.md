@@ -5,7 +5,15 @@
 - [How To Write An SCP - SCP Foundation](https://scp-wiki.wikidot.com/how-to-write-an-scp)
 -->
 
-This also act as the license's extension
+**Submission workflow overview**:
+
+1. Fork and gitclone the fork
+2. Write in the root `submission/` folder
+3. Understand and apply the criteria
+4. Fullfill the criteria and follow the guidelines
+5. Use the available utility we provide
+6. Copy the content of the `submission/` folder into their corresponding directory in `content/`
+7. Push and pull request
 
 ##  Creating your Entry 
 
@@ -31,12 +39,10 @@ Most of the documents here are hardly-rich formatted Markdown Text. so sadly it 
 
 - Obsidian, Chronicler, Github flavoured markdown, but
 - It is best to keep the YAML frontmatter as your single source for the page title and start all body content sections at ## Heading 2 and below (### Heading 3)
-- Detailed and Complicated tabular information should be written in html
+- Detailed and Complicated tabular information should be saved into html
 
 
 ## Submitting your Entry
-
-> We still confused about the placement of submitted entries: should it be put in the submission folder? or could it be put in their respective folder?
 
 We only accept that fullfilled our criteria stated in [...]
 
@@ -45,13 +51,17 @@ We only accept that fullfilled our criteria stated in [...]
 ### Stage of submission
 
 0. Pull request, submission channel, etc
-1. No suspicious file, be put in submission folder (Stardust) ???
-2. Under review of an admin, (Nebula)
+1. No suspicious file,
+2. Peer reviewed of an admin,
 3. be put in proper catalogue
-4. someting ...
+
+
+
+
 
 ### Status of Submission
 
+- Accepted
 - Rejected
 - Removed or Taken Down
 - Hidden
@@ -76,9 +86,10 @@ Contents containing this [things] will be removed/rejected until the site featur
 
 hardly explicit sexual fetish contents are PROHIBITED
 
-contents MAY be non-explicit sexual
+contents MAY be non-explicit sexual OR not created primarily for
+sexual arousal
 
-description of genital of a species and related behaviour is considered tolerable
+description of genital of a species and related behaviour is considered tolerable, 
 
 [if the prohibited content exist, it is not considered associated, official, canon, or ]
 
