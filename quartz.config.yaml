@@ -79,7 +79,7 @@ plugins:
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
-      markdownLinkResolution: shortest
+      markdownLinkResolution: relative
       lazyLoad: true
       externalLinkIcon: true
     order: 60
