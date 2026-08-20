@@ -1,13 +1,19 @@
 {
     "folders": [
         {
-        "name": "📦 Project Root",
-        "path": "."
+        "name": "📝 Submission",
+        "path": "submission"
+        },
+        { // Your files
+        "name": "📝 Content",
+        "path": "content"
         },
         {
-        "name": "📝 Content Root",
-        "path": "content"
-        }
+        "name": "📦 Project",
+        "path": "."
+        },
     ],
-    "settings": {}
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "📝 Content"
+    }
 }

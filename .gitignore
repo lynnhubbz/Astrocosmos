@@ -1,7 +1,8 @@
 # folders
 .brainstorming/
 content/_assets/
-.vscode/
+.vscode/**
+!.vscode/extensions.json
 
 
 
