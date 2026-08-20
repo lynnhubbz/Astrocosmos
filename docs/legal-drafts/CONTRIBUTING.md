@@ -50,7 +50,7 @@ Github Discussion used for:
 well, discussion, and comments on the wiki
 
 Github Pull Request for: 
-submitting Entries or large Contents
+submitting Entries or large Framework
 
 
 

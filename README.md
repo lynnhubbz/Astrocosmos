@@ -20,14 +20,26 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 
 ## Utilities
 
+There are some utilities to help you do and automate the workflow here. Even so, I intended this project to also be friendly with non-programmers. So, mastering programming is not a must, but it will greatly helps you in this project.
+
+These utilities listed below are still WIP
+
+- centralized submission workspace and its workflow (Python 🐍)
+
+  Have your submission centralized and sync them!
+
+- sync Excel into html and markdown (Python 🐍)
+
+  temporary solution to write mega and complicated tabular data which are git/github compatible
+
 - `.ipynb` converter to markdown (Python 🐍)
   
   if you write your content in ipynb, you can easily convert it into markdown 
   while still complying to our template with this
 
-- sync Excel into html and markdown (Python 🐍)
+- VS Code project workspace
 
-  temporary solution to write mega and complicated tabular data
+  ...?
 
 ## Compatibility
 

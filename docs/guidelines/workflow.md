@@ -53,6 +53,97 @@ gitGraph
     commit id: "v1.0-Release-Snapshot" tag: "v1.0"
 ~~~
 
+### Submission folder workflow
+
+~~~mermaid
+flowchart TD
+
+    %% Nodes
+    N1["Astrocosmos main repository"]
+    N2["Contributor fork / branch"]
+    N3["Submission workspace"]
+
+    subgraph PUSH["Push / Put"]
+    direction TD
+        N4["Submission manifest"]
+        N5["Unique entry metadata"]
+        N6["Write the articles"]
+        N7["Copy and paste to defined manifest"]
+        N8["Resolve / handle links"]
+    end
+
+    N9["Submission accepted / integrated"]
+    N10["Canonical content"]
+
+    subgraph PULL["Pull / Fetch"]
+    direction TD
+        N11["Manifest path lookup"]
+        N12{"Entry found at manifest path?"}
+        N13["Metadata lookup"]
+        N14{"Entry found by metadata?"}
+        N15["Update manifest path"]
+        N16["Unresolved entry"]
+        N17["Fetch entry"]
+        N18["Record local synchronization state"]
+    end
+
+    subgraph CHANGES["Handle Changes"]
+    direction TD
+        N19["Detect upstream changes"]
+        N20["Show affected entries / diff"]
+        N21["Contributor reviews and handles changes"]
+    end
+
+    N22["Updated submission"]
+
+    %% Main workflow
+    N1 ==> N2
+    N2 ==> N3
+    N3 ==> PUSH
+    PUSH ==> N9
+    N9 ==> N10
+    N10 ==> PULL
+    CHANGES ==> N22
+    N22 ==> PUSH
+
+    %% Push / Put
+    N4 -.-> N7
+    N5 -.-> N7
+    N6 --> N7
+    N7 --> N8
+
+    %% Pull / Fetch
+    PULL --> N11
+    N11 --> N12
+    N12 -- Yes --> N17
+    N12 -- No --> N13
+    N13 --> N14
+    N14 -- Yes --> N15
+    N15 -.-> N4
+    N15 --> N17
+    N14 -- No --> N16
+    N17 --> N18
+
+    %% Handle Changes
+    N18 -. "baseline" .-> N19
+    N10 --> N19
+    N19 --> N20
+    N20 --> N21
+
+    %% Machine nodes
+    class N7,N8,N11,N13,N15,N17,N18,N19,N20 machine;
+
+    %% End-user nodes
+    class N2,N3,N4,N5,N6,N21,N22,PUSH,CHANGES enduser;
+
+    %% Canonical repository/data
+    class N1,N9,N10 canonical;
+
+    classDef machine fill:#d9ecff,stroke:#4285c5,color:#000;
+    classDef enduser fill:#dff3df,stroke:#4d9b4d,color:#000;
+    classDef canonical fill:#eeeeee,stroke:#666,color:#000;
+~~~
+
 ## Making template and how tempalte is used
 
 ~~~mermaid
@@ -97,26 +188,42 @@ Legend:
 
 ~~~mermaid
 flowchart LR
-    subgraph A["Build"]
-    direction LR
+    
+    B.Oro["Orogen"]
+    Lag["Lagrange"]
+    B.TeF["Terraforge (Builder)"]
+    P.TeF["Terraforge"]
+    
+    subgraph A["Build Planet"]
+    direction TD
+        Q1{"Scientifically accurate and detailed?"}
 
-        BuilderOrogen["Orogen"]
-        Lagrange
-        Terraforge["Terraforge (Builder)"]
+        Q1 --YES--> N:::hidden
+        Q1 --NO--> Q2
+        N --> B.TeF
+        N --> S
+
+        B.TeF --> Q2
+        S --> Q2
+
+        Q2{"is the resulted planet very similar to earth?"}
+        Q2 --YES--> B.Oro
+        Lag
+        B.TeF
 
     end
     
     A --> B
 
     subgraph B[Place]
-    direction RL
-        PlacerTerraforge["Terraforge"]
+    direction TD
+        P.TeF
     end
 
     B -- translate to Celestia --> Celestia
     
     subgraph C[Visualize]
-    direction RL
+    direction TD
         Celestia
     end
 ~~~
