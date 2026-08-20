@@ -35,6 +35,18 @@ This section includes Engine, Thruster, Power plant, Propellant, Fuel, Anchor
 
 ### Compartments
 
+- flight and control Station
+- ?wing
+- ?docking port
+- CIC
+- engine deck
+- Astrogation deck
+- lobby (life support) deck
+- sickbay deck
+- emergency deck
+- cargo hold
+- hangar bay
+- ?Artificial Gravity
 
 ### Components
 
