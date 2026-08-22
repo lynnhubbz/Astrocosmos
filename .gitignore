@@ -1,8 +1,11 @@
 # folders
 .brainstorming/
 content/_assets/
+
+# VS Code setup
 .vscode/**
 !.vscode/extensions.json
+
 
 
 
@@ -40,6 +43,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
+!script/build
 develop-eggs/
 dist/
 downloads/
