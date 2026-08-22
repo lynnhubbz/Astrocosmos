@@ -18,6 +18,14 @@ This repository serves as a creative archive and cloud save for this project.
 
 Astrocosmos was established on **June 25, 2025**—marking the beginning of a universe that fuses science, fiction, and fantasy. The idea originated from a self-made Minecraft modpack consist of [Create](https://modrinth.com/mod/create) and [Valkrien Skies](https://modrinth.com/mod/valkyrien-skies) mods with its main mod are [Cosmic Horizon](https://modrinth.com/mod/cosmic-horizons-cosmos) and [Starlance](https://modrinth.com/mod/starlance). Therefore, a full how and why was made, and ended up as a (mostly) worldbuilding project.
 
+
+
+## How To Interact With This Project
+
+- ... License
+- We documented rules as [code of conduct, here!](WIP)
+- You want to contribute or submit your creation? see our [contributing and its guidelines, here!](WIP)
+
 ## Utilities
 
 There are some utilities to help you do and automate the workflow here. Even so, I intended this project to also be friendly with non-programmers. So, mastering programming is not a must, but it will greatly helps you in this project.
@@ -41,18 +49,10 @@ These utilities listed below are still WIP
 
   ...?
 
-## Compatibility
+### Compatibility
 
 This repo is compatible with various worldbuilding programs, of course with some issues
 
 - Chronicler
 - Timelines
 - ChartedRoots
-
-## How To Interact With This Project
-
-> WIP. Summary of all legal documents
->
-> Legal documents are made to detail and verbose so no misunderstanding is happened
-
-
