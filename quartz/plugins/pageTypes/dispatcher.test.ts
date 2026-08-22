@@ -74,11 +74,7 @@ describe("resolveLayout", () => {
   })
 
   test("preserves component references through override", () => {
-    const result = resolveLayout(
-      makePageType(),
-      { head: StubHead, footer: [StubA, StubB] },
-      {},
-    )
+    const result = resolveLayout(makePageType(), { head: StubHead, footer: [StubA, StubB] }, {})
     assert.strictEqual(result.footer[0], StubA)
     assert.strictEqual(result.footer[1], StubB)
   })
@@ -105,11 +101,7 @@ describe("resolveLayout frame resolution", () => {
   })
 
   test("defaults to 'default' when byPageType entry exists but has no frame", () => {
-    const result = resolveLayout(
-      makePageType(),
-      { head: StubHead },
-      { content: { left: [StubA] } },
-    )
+    const result = resolveLayout(makePageType(), { head: StubHead }, { content: { left: [StubA] } })
     assert.strictEqual(result.frame, "default")
   })
 })
