@@ -16,6 +16,7 @@
 /* THEMING FIX                                                            */
 /* ====================================================================== */
 
+
 /* rainbow headings using theme accent stops */
 // Catppuccin Mocha heading colors
 :root[saved-theme="dark"] {
@@ -133,17 +134,86 @@ hr {
   
 }
 
-@media all and (min-width: 801px) { //desktop environment only @remind fix collapsible
-  .explorer.collapsed,
-  .toc:has(> .toc-header.collapsed) {
-    flex: 0 0 auto;
-  }
 
-  .explorer.collapsed > .explorer-content,
-  .toc > .toc-content.collapsed {
-    display: none;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/* ====================================================================== */
+/* EXPLORER WIDGET FIX                                                    */
+/* ====================================================================== */
+// @remind fix collapsible
+
+
+//desktop environment only 
+// @media all and (min-width: 801px) { 
+//   .explorer.collapsed,
+//   .toc:has(> .toc-header.collapsed) {
+//     flex: 0 0 auto;
+//   }
+// 
+//   .explorer.collapsed > .explorer-content,
+//   .toc > .toc-content.collapsed {
+//     display: none;
+//   }
+// }
+
+button.explorer-toggle {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  h2 {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important; // Removes vertical text box heights
   }
 }
+
+// DESKTOP LAYOUT (Screens wider than 768px)
+@media (min-width: 769px) {
+  button.desktop-explorer {
+    display: inline-flex !important; // Shows the plain "Contents" text layout
+    align-items: center !important;  // Keeps the text and arrow on the same horizontal line
+    gap: 0.5rem !important;          // Adds clean, comfortable spacing between text and arrow
+    
+    // RESTORES THE CHEVRON ARROW
+    svg.fold {
+      display: block !important;     
+      visibility: visible !important;
+    }
+  }
+  
+  button.mobile-explorer {
+    display: none !important;        // Erases the mobile menu icon entirely
+  }
+}
+
+
+// MOBILE LAYOUT (Screens 768px and smaller)
+@media (max-width: 768px) {
+  button.desktop-explorer {
+    display: none !important;        // Erases the desktop text completely on phones
+  }
+
+  button.mobile-explorer {
+    display: inline-flex !important; // Shows the native Lucide hamburger menu icon
+    align-items: center !important;
+    justify-content: center !important;
+
+    // Ensures the native lucide-menu vector is visible and clean
+    svg.lucide-menu {
+      display: block !important;
+      visibility: visible !important;
+      width: 24px !important;
+      height: 24px !important;
+    }
+  }
+}
+
 
 
 /* ====================================================================== */
