@@ -1,6 +1,4 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
-
-# need to put page listing after backlinks and before discussions
 configuration:
   pageTitle: Astrocosmos
   pageTitleSuffix: ""
@@ -108,8 +106,8 @@ plugins:
   - source: "@quartz-themes/core"
     enabled: true
     options:
-      theme: "its-theme"
-      variation: "blue"
+      theme: its-theme
+      variation: blue
       mode: both
   - source: "@quartz-community/remove-draft"
     enabled: true
@@ -164,12 +162,12 @@ plugins:
   - source: "@quartz-community/search"
     enabled: true
     layout:
-      position: left
+      position: header
       priority: 20
       group: toolbar
       condition: not-index
       groupOptions:
-        grow: true
+        grow: true # Search will grow to fill available space
   - source: "@quartz-community/backlinks"
     enabled: true
     layout:
@@ -201,14 +199,14 @@ plugins:
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
-      position: left
+      position: header
       priority: 30
       group: toolbar
       condition: not-index
   - source: "@quartz-community/reader-mode"
     enabled: true
     layout:
-      position: left
+      position: header
       priority: 35
       group: toolbar
       condition: not-index
@@ -271,7 +269,7 @@ plugins:
       priority: 15
       display: all
       condition: not-index
-  - source: github:quartz-community/explorer # @remind CHANGED QUARTZ FEATURE
+  - source: github:quartz-community/explorer
     enabled: true
     options:
       folderClickBehavior: link
@@ -280,18 +278,28 @@ plugins:
       position: left
       priority: 100
       condition: not-index
-  - source: github:vazome/quartz-image-zoom # @remind CHANGED QUARTZ FEATURE
+  - source: github:vazome/quartz-image-zoom
     enabled: true
     options:
       condition: not-index
     order: 50
-
-  - source: "./quartz/plugins/inline-recent"
+  - source: ./quartz/plugins/inline-recent
     enabled: true
     options:
-      title: "Latest Feed Updates"
+      title: Latest Feed Updates
       limit: 10
       showTags: false
+  - source: github:satche/quartz-navbar
+    enabled: true
+    options:
+      links:
+        - label: Home
+          href: /
+        - label: About
+          href: /about
+    layout:
+      position: header
+      priority: 0
 layout:
   groups:
     toolbar:

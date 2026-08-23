@@ -12,6 +12,12 @@
       "resolved": "https://github.com/vazome/quartz-image-zoom.git",
       "commit": "eb516f150d95859c31c1fa5507f2fd81b35bbb15",
       "installedAt": "2026-08-13T10:32:51.176Z"
+    },
+    "quartz-navbar": {
+      "source": "github:satche/quartz-navbar",
+      "resolved": "https://github.com/satche/quartz-navbar.git",
+      "commit": "b62e37616a1cc08451ff2f4e6f07d39963f61140",
+      "installedAt": "2026-08-23T08:15:27.293Z"
     }
   }
 }
