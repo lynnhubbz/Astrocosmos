@@ -2,7 +2,7 @@
 This folder is to place non-"in-game" explanations, but could be.
 
 # LEGAL DOCUEMENTS ARE STILL DRAFT — NOT THE FINAL!
-LICENSE.md s, CONTRIBUTING, CODE OF CONDUCT, DEFINITIONS are still draft
+LICENSEs CONTRIBUTINGs CODE_OF_CONDUCTs
 
 This document is a work in progress and does not represent the
 final license governing this project.
