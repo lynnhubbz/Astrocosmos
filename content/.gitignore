@@ -3,7 +3,8 @@
 # notebook
 **/*.ipynb    
 # data
-**/*.xlsx     
+**/*.xlsx
+**/*.vsdx
 # BrickField save
 **/*.io    
 
