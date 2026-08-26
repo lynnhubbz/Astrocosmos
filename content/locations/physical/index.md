@@ -6,7 +6,7 @@ The main physical locations of Astrocosmos
 
 
 
-![alt text](_assets/celestialobject_classification.svg)
+![alt text](locations/physical/_assets/celestialobject_classification.svg)
 
 <!-- =================================================================== -->
 <!-- CELESTIAL "OBJECTS"                                                 -->
@@ -35,7 +35,7 @@ The main physical locations of Astrocosmos
 
 ## Planemos
 
-![alt text](_assets/planet_types.svg)
+![alt text](locations/physical/_assets/planet_types.svg)
 
 ## Smaller Bodies
 
