@@ -4,6 +4,8 @@ VERSION: draft
 
 # CONTRIBUTING
 
+Jump to [here](#)
+
 ## Definitions.
 
 This document used the definitions stated in [DEFINITIONS.md](DEFINITIONS.md).
@@ -50,10 +52,12 @@ Github Discussion used for:
 well, discussion, and comments on the wiki
 
 Github Pull Request for: 
-submitting Entries or large Framework
+submitting Entries or larger Framework
 
 
 
 ## Worlflow of Contributions
 
 are detailed in separate documents
+
+## Contribute by submitting your article
