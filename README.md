@@ -24,7 +24,7 @@ Astrocosmos was established on **June 25, 2025**—marking the beginning of a un
 
 - ... License
 - We documented rules as [code of conduct, here!](WIP)
-- You want to contribute or submit your creation? see our [contributing and its guidelines, here!](WIP)
+- You want to contribute or submit your creation? see our [contributing and its guidelines, here!](/docs/CONTRIBUTING.md)
 
 ## Utilities
 
