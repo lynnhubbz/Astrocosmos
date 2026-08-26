@@ -5,6 +5,7 @@ on:
     paths:
       - 'content/**'
       - 'README.md'
+  workflow_dispatch:
  
 permissions:
   contents: read
