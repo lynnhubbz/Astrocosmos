@@ -173,6 +173,17 @@ button.explorer-toggle {
   }
 }
 
+button.toc-header {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  h3 {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important; // Removes vertical text box heights
+  }
+}
+
 // DESKTOP LAYOUT (Screens wider than 768px)
 @media (min-width: 769px) {
   button.desktop-explorer {
