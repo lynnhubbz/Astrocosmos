@@ -14,6 +14,10 @@
         ☐ Docs
             ☐ rename readmes into index
 
+☐ Define usage of folders clearly
+    ☐ templates is for "What you write"
+    ☐ guidelines/content is for "How you write (and how can you submit)"
+
 ☐ How can we use antivirus on pullrequests?
 ☐ Emojize documents
 ☐ Quartz plugin to view previous git tag
