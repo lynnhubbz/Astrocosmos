@@ -1,2 +1,2 @@
-- [CC By Antonio Ciccolella / M. De Leo](Vaucouleurs_Galaxy_Morphology.png)
+- [CC By Antonio Ciccolella / M. De Leo](galaxy_morphoclass-vaucouleurs.png)
 - I NEED https://sci-hub.box/10.1086/190084

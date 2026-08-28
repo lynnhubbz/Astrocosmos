@@ -51,13 +51,10 @@ Github Issue used for:
 Github Discussion used for:
 well, discussion, and comments on the wiki
 
-Github Pull Request for: 
-submitting Entries or larger Framework
+Pull Request for: submitting Entries or large Contents
 
+submitting are detailed in [this document](./guidelines/submitting.md)
 
+## Next Steps ...
 
-## Worlflow of Contributions
-
-are detailed in separate documents
-
-## Contribute by submitting your article
+Already read the document? begin making your own starting from [here](/templates/README.md)!

@@ -780,7 +780,7 @@
 			<text x="7.2" y="-823.15" transform="scale(1,-1)" class="st4" v:langID="1033"><v:paragraph/><v:tabList/>Terrestrial</text>		</g>
 		<g id="shape10-57" v:mID="10" v:groupContext="shape" transform="translate(-523.993,341.536) rotate(89.9) scale(1,-1)">
 			<title>Rectangle.10</title>
-			<desc>Gas</desc>
+			<desc>Jovian</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
 				<v:ud v:nameU="visMasterStencil" v:prompt="" v:val="VT4(Basic_M.vssx)"/>
@@ -788,7 +788,7 @@
 			<v:textBlock v:margins="rect(7.2,7.2,7.2,7.2)" v:verticalAlign="2"/>
 			<v:textRect cx="240.716" cy="770.673" width="481.44" height="142.433"/>
 			<rect x="0" y="699.456" width="481.432" height="142.433" rx="11.3386" ry="11.3386" class="st3"/>
-			<text x="7.2" y="-710.5" transform="scale(1,-1)" class="st4" v:langID="1033"><v:paragraph/><v:tabList/>Gas</text>		</g>
+			<text x="7.2" y="-710.5" transform="scale(1,-1)" class="st4" v:langID="1033"><v:paragraph/><v:tabList/>Jovian</text>		</g>
 		<g id="shape14-60" v:mID="14" v:groupContext="shape" transform="translate(350.848,-393.344)">
 			<title>Rectangle.14</title>
 			<desc>Hot</desc>

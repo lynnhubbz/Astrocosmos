@@ -6,7 +6,9 @@ content/_assets/
 .vscode/**
 !.vscode/extensions.json
 
-
+# Microsoft Office
+**/*.xlsx
+**/*.vsdx
 
 
 # ======================================================================== #
