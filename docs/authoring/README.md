@@ -13,4 +13,4 @@ Because [...]
 
 ## Next Steps ...
 
-Going to write your articles? Be sure to read our guidelines [here](/docs/guidelines/README.md)
+Going to write your articles? Be sure to read our guidelines [here](../guidelines/README.md)
