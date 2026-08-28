@@ -19,6 +19,7 @@ jobs:
         with:
           fetch-depth: 0
           submodules: true
+          token: ${{ secrets.WIKI_PAT }}
 
       - name: Convert YAML frontmatter to HTML comments
         run: |
@@ -73,7 +74,9 @@ jobs:
           }
           
           // Process docs folder and root README.md
-          processDirectory('./docs');
+          if (fs.existsSync('./docs')) {
+            processDirectory('./docs');
+          }
           if (fs.existsSync('./README.md')) {
             convertFile('./README.md');
           }
