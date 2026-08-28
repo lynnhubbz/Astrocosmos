@@ -2,7 +2,6 @@ name: Sync docs to Wiki
 
 on:
   push:
-    # adjust paths to match where you keep docs, or drop to run on every push
     branches:
       - main
     paths:
@@ -11,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  convert-frontmatter:
+  sync-wiki:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -19,14 +18,11 @@ jobs:
         with:
           fetch-depth: 0
           submodules: true
-          token: ${{ secrets.WIKI_PAT }}
 
-      - name: Convert YAML frontmatter to HTML comments
+      - name: Convert YAML frontmatter to HTML comments (runtime)
         run: |
-          # Install gray-matter locally in the repo
           npm install gray-matter
           
-          # Create a script to convert frontmatter
           cat > convert-frontmatter.js << 'EOF'
           const fs = require('fs');
           const path = require('path');
@@ -37,18 +33,15 @@ jobs:
               const content = fs.readFileSync(filePath, 'utf8');
               const { data, content: body } = matter(content);
               
-              // If no frontmatter, skip
               if (Object.keys(data).length === 0) {
                 return;
               }
               
-              // Convert frontmatter to YAML string
               const yamlLines = [];
               for (const [key, value] of Object.entries(data)) {
                 yamlLines.push(`${key}: ${JSON.stringify(value)}`);
               }
               
-              // Create HTML comment with YAML content
               const htmlComment = `<!--\n${yamlLines.join('\n')}\n-->\n`;
               const newContent = htmlComment + body;
               
@@ -73,7 +66,6 @@ jobs:
             }
           }
           
-          // Process docs folder and root README.md
           if (fs.existsSync('./docs')) {
             processDirectory('./docs');
           }
@@ -82,35 +74,8 @@ jobs:
           }
           EOF
           
-          # Run the conversion script
           node convert-frontmatter.js
-          
-          # Clean up
           rm convert-frontmatter.js
-
-      - name: Commit and push converted files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          
-          # Check if there are any changes
-          if git diff --quiet; then
-            echo "No frontmatter conversions needed"
-          else
-            git add docs/ README.md
-            git commit -m "Convert YAML frontmatter to HTML comments"
-            git push
-          fi
-
-  sync-wiki:
-    needs: convert-frontmatter
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-          submodules: true
 
       - name: Run github-docs-to-wiki
         uses: jost1x/github-docs-to-wiki@master
