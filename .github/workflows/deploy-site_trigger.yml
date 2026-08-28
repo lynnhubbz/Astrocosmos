@@ -6,6 +6,11 @@ on:
       - quartz-test # currently use the `quartz-test` branch
   workflow_dispatch:
 
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
 jobs:
   run-template:
     uses: ./.github/workflows/_build_n_deploy.yml
