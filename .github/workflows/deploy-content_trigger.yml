@@ -1,0 +1,13 @@
+name: Trigger Deploy from Main
+
+on:
+    push:
+        branches:
+        - main
+        paths:
+        - 'content/**'
+    workflow_dispatch:
+
+jobs:
+    run-deploy:
+        uses: ./.github/workflows/_build_n_deploy.yml
