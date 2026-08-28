@@ -11,7 +11,99 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync-docs:
+  convert-frontmatter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Convert YAML frontmatter to HTML comments
+        run: |
+          # Install Node.js if not already available
+          which node || (curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs)
+          
+          # Install gray-matter for parsing YAML frontmatter
+          npm install -g gray-matter
+          
+          # Create a script to convert frontmatter
+          cat > convert-frontmatter.js << 'EOF'
+          const fs = require('fs');
+          const path = require('path');
+          const matter = require('gray-matter');
+          
+          function convertFile(filePath) {
+            try {
+              const content = fs.readFileSync(filePath, 'utf8');
+              const { data, content: body } = matter(content);
+              
+              // If no frontmatter, skip
+              if (Object.keys(data).length === 0) {
+                return;
+              }
+              
+              // Convert frontmatter to YAML string
+              const yamlLines = [];
+              for (const [key, value] of Object.entries(data)) {
+                yamlLines.push(`${key}: ${JSON.stringify(value)}`);
+              }
+              
+              // Create HTML comment with YAML content
+              const htmlComment = `<!--\n${yamlLines.join('\n')}\n-->\n`;
+              const newContent = htmlComment + body;
+              
+              fs.writeFileSync(filePath, newContent, 'utf8');
+              console.log(`Converted: ${filePath}`);
+            } catch (error) {
+              console.error(`Error processing ${filePath}:`, error.message);
+            }
+          }
+          
+          function processDirectory(dirPath) {
+            const files = fs.readdirSync(dirPath, { withFileTypes: true });
+            
+            for (const file of files) {
+              const fullPath = path.join(dirPath, file.name);
+              
+              if (file.isDirectory()) {
+                processDirectory(fullPath);
+              } else if (file.name.endsWith('.md')) {
+                convertFile(fullPath);
+              }
+            }
+          }
+          
+          // Process docs folder and root README.md
+          processDirectory('./docs');
+          if (fs.existsSync('./README.md')) {
+            convertFile('./README.md');
+          }
+          EOF
+          
+          # Run the conversion script
+          node convert-frontmatter.js
+          
+          # Clean up
+          rm convert-frontmatter.js
+
+      - name: Commit and push converted files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Check if there are any changes
+          if git diff --quiet; then
+            echo "No frontmatter conversions needed"
+          else
+            git add docs/ README.md
+            git commit -m "Convert YAML frontmatter to HTML comments"
+            git push
+          fi
+
+  sync-wiki:
+    needs: convert-frontmatter
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
