@@ -13,4 +13,4 @@ permissions:
 
 jobs:
   run-deploy:
-    uses: ./.github/workflows/_build_n_deploy.yml
+    uses: ./.github/workflows/deploy.yml

@@ -10,8 +10,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync-wiki:
+  convert-frontmatter:
+    name: Convert YAML frontmatter
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -19,74 +21,45 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      - name: Convert YAML frontmatter to HTML comments (runtime)
-        run: |
-          npm install gray-matter
-          
-          cat > convert-frontmatter.js << 'EOF'
-          const fs = require('fs');
-          const path = require('path');
-          const matter = require('gray-matter');
-          
-          function convertFile(filePath) {
-            try {
-              const content = fs.readFileSync(filePath, 'utf8');
-              const { data, content: body } = matter(content);
-              
-              if (Object.keys(data).length === 0) {
-                return;
-              }
-              
-              const yamlLines = [];
-              for (const [key, value] of Object.entries(data)) {
-                yamlLines.push(`${key}: ${JSON.stringify(value)}`);
-              }
-              
-              const htmlComment = `<!--\n${yamlLines.join('\n')}\n-->\n`;
-              const newContent = htmlComment + body;
-              
-              fs.writeFileSync(filePath, newContent, 'utf8');
-              console.log(`Converted: ${filePath}`);
-            } catch (error) {
-              console.error(`Error processing ${filePath}:`, error.message);
-            }
-          }
-          
-          function processDirectory(dirPath) {
-            const files = fs.readdirSync(dirPath, { withFileTypes: true });
-            
-            for (const file of files) {
-              const fullPath = path.join(dirPath, file.name);
-              
-              if (file.isDirectory()) {
-                processDirectory(fullPath);
-              } else if (file.name.endsWith('.md')) {
-                convertFile(fullPath);
-              }
-            }
-          }
-          
-          if (fs.existsSync('./docs')) {
-            processDirectory('./docs');
-          }
-          if (fs.existsSync('./README.md')) {
-            convertFile('./README.md');
-          }
-          EOF
-          
-          node convert-frontmatter.js
-          rm convert-frontmatter.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install gray-matter
+
+      - name: Convert frontmatter
+        run: node scripts/convert-frontmatter.js
+
+      - name: Upload converted documentation
+        uses: actions/upload-artifact@v6
+        with:
+          name: converted-docs
+          path: |
+            docs/
+            README.md
+            .git/
+          include-hidden-files: true
+
+  sync-wiki:
+    name: Sync docs to Wiki
+    runs-on: ubuntu-latest
+    needs: convert-frontmatter
+
+    steps:
+      - name: Download converted documentation
+        uses: actions/download-artifact@v7
+        with:
+          name: converted-docs
+          path: .
 
       - name: Run github-docs-to-wiki
         uses: jost1x/github-docs-to-wiki@master
         with:
-          # REQUIRED: create a PAT and store as a repository secret (see notes below)
           githubToken: ${{ secrets.WIKI_PAT }}
-          # optional: set to 'main' or 'master' depending on your repo
           defaultBranch: main
-          # optional: directory where your docs live (omit to use repo root)
           rootDocsFolder: docs
-          # optional: rename README.md -> Home.md in the wiki
           convertRootReadmeToHomePage: true
-          # optional: example commit message format
           customCommitMessageFormat: 'Sync docs from {shaShort}: {commitMessage}'
