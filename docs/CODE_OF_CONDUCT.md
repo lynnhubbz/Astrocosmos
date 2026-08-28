@@ -25,7 +25,9 @@ Interaction in this repository is limited to:
 
 Organizations with owners may participate only where all owners are workers and all workers are owners, with equal equity and/or equal vote.
 
-> WIP You are not law enforcement or military, or working for or under either
+Participation by law-enforcement or military personnel,
+or by persons acting on behalf of or under the direction of either,
+is not permitted. 
 
 ## Prohibited Conduct
 
@@ -36,9 +38,9 @@ Said reasons include, but are not limited to:
 - **Exploitative content**, including pedophilia, zoophilia, or incest.
 - Advocacy or support for law enforcement or military organizations.
 - **Any Blockchain-related technology**, including cryptocurrencies and NFTs.
-- **Generative AI or AI training** intended to fully subtitute human ability and creativity.
+- **Generative AI or AI training** intended to fully substitute human ability and creativity.
 
-You MUST NOT directly affiliated with any organization or group that promotes or engages in the prohibited conduct above.
+You MUST NOT be directly affiliated with any organization or group that promotes or engages in the prohibited conduct above.
 
 
 
@@ -47,7 +49,7 @@ You MUST NOT directly affiliated with any organization or group that promotes or
 The permissions and commercial rights granted under the LICENSE and CONTRIBUTING will terminate if:
 
 1. You breach any of the Prohibited Conduct
-2. You did not fullfill the LICENSE's additional term 
+2. You did not fulfill the LICENSE's additional term 
 3. You attempt to trademark, copyright-claim, or assert legal ownership over the setting, name, or the constructed world.
 4. You issue false copyright takedown notices against other community creators building works set within the constructed world.
 

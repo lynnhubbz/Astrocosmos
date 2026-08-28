@@ -32,17 +32,16 @@ This document used the definitions stated in [DEFINITIONS.md](DEFINITIONS.md).
 
 Unless otherwise stated explicitly, the Lead Maintainer declared that:
 
-### A. Contents are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+### A. Contents are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 > [!NOTE] Content License
 > 
 > Astrocosmos and its Content (excluding Independent Works) 
 > by Lynn Hubbz and Contributors 
-> is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+> is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-1. You is also the "You" defined  in the CC BY-SA 4.0 license
+1. You is also the "You" defined  in the CC BY-NC-SA 4.0 license
 2. Content is the "Licensed Material" defined in the license.
-3. Independent Work are not considered as [...]
 
 ### B. Software Utilities are licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
