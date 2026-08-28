@@ -2,7 +2,7 @@
 
 # notebook
 **/*.ipynb    
-# data
+# microsoft
 **/*.xlsx
 **/*.vsdx
 # BrickField save
