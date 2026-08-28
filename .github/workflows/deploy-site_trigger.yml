@@ -12,5 +12,5 @@ permissions:
     id-token: write
 
 jobs:
-  run-template:
+  run-deploy:
     uses: ./.github/workflows/_build_n_deploy.yml
