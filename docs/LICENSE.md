@@ -4,27 +4,19 @@ VERSION: draft
 
 # ASTROCOSMOS LICENSE
 
-Copyright (c) 2026 Lynn Hubbz and Contributors
-
-This is an anti-capitalist, anti-bigotry project, created by people who are tired of ill-intended organizations and individuals, and would rather not have those around their creations.
+Astrocosmos is a collaborative worldbuilding project
 
 <!-- 
 My GOAL here, as a note for me if i want to update AND if someone want to review
 
-1.
-to make people can use whatever entry that are available in the constructed world.
-And make it exist if it not yet available.
+Astrocosmos Content is free to use, including commercially; 
 
-While protect Your right about your Creative Works
+Astrocosmos itself is not a product to be resold. 
 
-2.
-The project (not the owner) owns your entry and contributions
-but you still have your copyright of it.
-WHAT I MEAN BY THIS IS: "well its now in the universe of Astrocosmos and not yours"
+Independent Works remain the property of their authors, even when set in the Constructed World. 
 
-3.
-i want to make this like CC BY NC SA but applies only to the Contents.
-so people making Creative Works set in constructed world (which is not submitted into the Project) able to make profits safely
+Contributions become part of Astrocosmos canon without necessarily transferring ownership
+
 > "What if i already pour my sweat in this and someone make profit from it by making a game?"
 > see FAQ
 
@@ -38,20 +30,19 @@ This document used the definitions stated in [DEFINITIONS.md](DEFINITIONS.md).
 
 ## Section 2 - Licensing.
 
-Based on the definition stated above, therefore:
+Unless otherwise stated explicitly, the Lead Maintainer declared that:
 
-### A. Contents are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+### A. Contents are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 > [!NOTE] Content License
 > 
 > Astrocosmos and its Content (excluding Independent Works) 
 > by Lynn Hubbz and Contributors 
-> is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+> is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
-You is also the "You" defined  in the CC BY-NC-SA 4.0 license
-Content is the "Licensed Material" defined in the license.
-Contents which are obviously includes Entry, Framework, and Depictive Work.
-Independent Work are not considered as [...]
+1. You is also the "You" defined  in the CC BY-SA 4.0 license
+2. Content is the "Licensed Material" defined in the license.
+3. Independent Work are not considered as [...]
 
 ### B. Software Utilities are licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
@@ -78,7 +69,7 @@ Software Utility is the "Work" defined in the license.
 
 This means:
 
-1. The license to Independent Work set in the Constructed World remains with You.
+1. Copyright and other rights in an Independent Work remain with You / their authors.
 
 2. Therefore, You are able to monetize and sell Your own original Independent Work set in the Constructed World.
 
@@ -92,7 +83,9 @@ This means:
 
 1. Restating CC BY and Apache, **You MUST give proper credit**.
    
-    Especially in Independent Works, attribution MAY be provided by crediting the Project and, it is RECOMMENDED to identify the relevant contributors or Contributions. 
+    You MUST comply with the attribution and notice requirements of the applicable license when using Content or Software Utilities.
+
+    For Independent Works,, attribution MAY be provided by crediting the Project and, it is RECOMMENDED to identify the relevant contributors or Contributions. 
     You may do so in any reasonable manner, but not in any way that suggests the Project endorses You or Your use. 
 
     The notice:
@@ -101,14 +94,17 @@ This means:
     > is not officially affiliated with or endorsed 
     > by The Astrocosmos project."
 
-2. You **MUST NOT use** this repository or its contents **for generative AI, AI training**, or similar purposes to fully subtitute human ability and creativity.
+2. You **MUST NOT use** the Contents **for generative AI, AI training**, or similar purposes to fully subtitute human ability and creativity.
 
-3. You **MUST NOT resell** the Constructed World or modified versions of itself.
-
-
-## Section 4 - We Encourage you to also follow our Code of Conduct ???
+3. You **MUST NOT resell** the Project, including the Repository, Constructed World, or modified versions of itself.
 
 
+## Section 4 - Community Standards
+
+Use of the Project is also subject to the community standards established
+by the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+The Code of Conduct governs participation in the community.
 
 ## Section 5 - Miscellaneous
 
