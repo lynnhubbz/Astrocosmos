@@ -22,11 +22,8 @@ jobs:
 
       - name: Convert YAML frontmatter to HTML comments
         run: |
-          # Install Node.js if not already available
-          which node || (curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs)
-          
-          # Install gray-matter for parsing YAML frontmatter
-          npm install -g gray-matter
+          # Install gray-matter locally in the repo
+          npm install gray-matter
           
           # Create a script to convert frontmatter
           cat > convert-frontmatter.js << 'EOF'
