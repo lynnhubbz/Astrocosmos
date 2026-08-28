@@ -8,6 +8,11 @@ on:
         - 'content/**'
     workflow_dispatch:
 
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
 jobs:
     run-deploy:
         uses: ./.github/workflows/_build_n_deploy.yml
