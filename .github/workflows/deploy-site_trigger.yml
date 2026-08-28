@@ -1,0 +1,11 @@
+name: Trigger Deploy from Quartz Engine
+
+on:
+  push:
+    branches:
+      - quartz-test # currently use the `quartz-test` branch
+  workflow_dispatch:
+
+jobs:
+  run-template:
+    uses: ./.github/workflows/_build_n_deploy.yml

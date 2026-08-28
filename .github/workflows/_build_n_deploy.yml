@@ -1,33 +1,26 @@
-name: Deploy Quartz site to GitHub Pages
- 
+name: Quartz Build and Deploy
+
 on:
-  push:
-    paths:
-      - 'content/**'
-      - 'README.md'
-  workflow_dispatch:
- 
+  workflow_call: # This makes the workflow reusable
+
 permissions:
   contents: read
   pages: write
   id-token: write
- 
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
- 
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: ALWAYS check out the Quartz engine from quartz-test
       - name: Checkout Quartz Engine
         uses: actions/checkout@v6
         with:
           ref: quartz-test
 
-      # Step 2: Pull the content tree from the main branch into a temporary folder
-      # lorem ipsum
       - name: Checkout content from main branch
         uses: actions/checkout@v6
         with:
@@ -51,8 +44,7 @@ jobs:
 
       - name: Check for case-duplicate content paths
         run: |
-          dupes=$(find content -mindepth 1 -printf '%P\n' \
-                  | tr 'A-Z' 'a-z' | sort | uniq -d)
+          dupes=$(find content -mindepth 1 -printf '%P\n' | tr 'A-Z' 'a-z' | sort | uniq -d)
           if [ -n "$dupes" ]; then
             echo "::error::Case-duplicate paths in content tree:"
             echo "$dupes"
@@ -90,8 +82,7 @@ jobs:
 
       - name: Check for case-duplicate output paths
         run: |
-          dupes=$(find public -mindepth 1 -printf '%P\n' \
-                  | tr 'A-Z' 'a-z' | sort | uniq -d)
+          dupes=$(find public -mindepth 1 -printf '%P\n' | tr 'A-Z' 'a-z' | sort | uniq -d)
           if [ -n "$dupes" ]; then
             echo "::error::Case-duplicate paths in build output:"
             echo "$dupes"
