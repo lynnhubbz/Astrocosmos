@@ -9,7 +9,7 @@ Because [...]
 
 ## So, What do you want to make?
 
-- I want to make my world! [(Celestial Objects: Stars, & Planets)](./Celestial%20Objects/readme.md)
+- I want to make my world! [(Celestial Objects: Stars, & Planets)](celestial_objects.md)
 
 ## Next Steps ...
 
