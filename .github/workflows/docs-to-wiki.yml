@@ -3,6 +3,8 @@ name: Sync docs to Wiki
 on:
   push:
     # adjust paths to match where you keep docs, or drop to run on every push
+    branches:
+      - main
     paths:
       - 'docs/**'
       - 'README.md'
