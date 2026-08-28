@@ -62,8 +62,8 @@ Unless otherwise stated explicitly, the Lead Maintainer declared that:
 > See the License for the specific language governing permissions and
 > limitations under the License. 
 
-You is also the "You" defined in the Apache license
-Software Utility is the "Work" defined in the license. 
+1. You is also the "You" defined in the Apache license
+2. Software Utility is the "Work" defined in the license. 
 
 ### C. Independent Works are All Rights Reserved to You / their authors
 
