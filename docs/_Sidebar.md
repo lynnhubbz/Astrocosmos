@@ -1,1 +1,1 @@
-# Lorem Ipsum
+# Placebo Sidebar
