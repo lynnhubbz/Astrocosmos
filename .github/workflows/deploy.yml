@@ -2,6 +2,7 @@ name: Quartz Build and Deploy
 
 on:
   workflow_call: # This makes the workflow reusable
+  workflow_dispatch:
 
 permissions:
   contents: read
