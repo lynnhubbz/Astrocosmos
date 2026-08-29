@@ -31,7 +31,7 @@ jobs:
         run: npm install gray-matter
 
       - name: Convert frontmatter
-        run: node scripts/convert-frontmatter.js
+        run: node scripts/docstowiki/convert-frontmatter.js
 
       - name: Upload converted documentation
         uses: actions/upload-artifact@v6
