@@ -21,13 +21,13 @@ The compartments of a payloads are, but not exclusively limited to,
 flight control station, propulsion bus control station and maintenance center, astrogation station, accomodation, other decks, bays, and passages. 
 This payload compartments are much more complicated than the next two, therefore this will be described in detail after them.
 
-![](./_assets/image.png)
+![](/vehicles/spaceships/_assets/image.png)
 
 The base which payload stored or holded are called **structure**, which is the skeleton and skin of the spacecraft. 
 Included in both Propulsion Bus and Payload Section. 
 The compartments of structure are Frame (which divided into thrust frame and space frame), Armor, Shield, and Wing. 
 
-![](./_assets/image-1.png)
+![](/vehicles/spaceships/_assets/image-1.png)
 
 The **propulsion bus** is … . 
 This section includes Engine, Thruster, Power plant, Propellant, Fuel, Anchor
@@ -75,7 +75,7 @@ Spacecrafts includes all type of lightcrafts, gun ships, transports, and one typ
 Spaceship includes one types of cargo ships, all type of construction ships, carriers (and light carriers) and capitals (and light capitals). 
 Semi-stationary includes all types of Mobile Stations and (fixed) stations.
 
-[[_ship_classification.md|See here for the classification]]
+[[/vehicles/spaceships/ship_classification.md|See here for the classification]]
 
 ## Spaceships (or Soon-to-be Universal) Secondary Classification
 
