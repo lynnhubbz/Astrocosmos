@@ -135,13 +135,14 @@ hr {
 }
 
 
-
-header {
-  display: flex;
+// Put navbar items far at left and toolbar at far right
+header  {
+  // display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
+
+
 
 /* ====================================================================== */
 /* EXPLORER WIDGET FIX                                                    */
@@ -163,8 +164,6 @@ header {
 // }
 
 button.explorer-toggle {
-  margin: 0 !important;
-  padding: 0 !important;
 
   h2 {
     margin: 0 !important;
@@ -174,8 +173,6 @@ button.explorer-toggle {
 }
 
 button.toc-header {
-  margin: 0 !important;
-  padding: 0 !important;
 
   h3 {
     margin: 0 !important;
@@ -185,65 +182,35 @@ button.toc-header {
 }
 
 // DESKTOP LAYOUT (Screens wider than 768px)
-@media (min-width: 769px) {
-  button.desktop-explorer {
-    display: inline-flex !important; // Shows the plain "Contents" text layout
-    align-items: center !important;  // Keeps the text and arrow on the same horizontal line
-    gap: 0.5rem !important;          // Adds clean, comfortable spacing between text and arrow
-    
-    // RESTORES THE CHEVRON ARROW
-    svg.fold {
-      display: block !important;     
-      visibility: visible !important;
-    }
-  }
-  
-  button.mobile-explorer {
-    display: none !important;        // Erases the mobile menu icon entirely
-  }
-}
-
-
-// MOBILE LAYOUT (Screens 768px and smaller)
-@media (max-width: 768px) {
-  button.desktop-explorer {
-    display: none !important;        // Erases the desktop text completely on phones
-  }
-
-  button.mobile-explorer {
-    display: inline-flex !important; // Shows the native Lucide hamburger menu icon
-    align-items: center !important;
-    justify-content: center !important;
-
-    // Ensures the native lucide-menu vector is visible and clean
-    svg.lucide-menu {
-      display: block !important;
-      visibility: visible !important;
-      width: 24px !important;
-      height: 24px !important;
-    }
-  }
-}
+// @media (min-width: 801px) {
+//   button.desktop-explorer {
+//     display: inline-flex !important;
+//   }
+// 
+//   button.mobile-explorer {
+//     display: none !important;
+//   }
+// }
+// 
+// @media (max-width: 800px) {
+//   button.desktop-explorer {
+//     display: none !important;
+//   }
+// 
+//   button.mobile-explorer {
+//     display: inline-flex !important;
+//   }
+// }
 
 
 
-/* ====================================================================== */
-/* PAGE RESIZE SO IT TAKES WHOLE SCREEN                                   */
-/* ====================================================================== */
 
-@media all and ($desktop) {
-  body div#quartz-root.page div#quartz-body {
-    width: min(100%, calc(#{map.get($breakpoints, desktop)} + 700px));
-    max-width: min(100%, calc(#{map.get($breakpoints, desktop)} + 700px));
-    padding: 0 auto;
-  }
-}
 
 /* ====================================================================== */
 /* CUSTOM WIDGETS: TABLE                                                  */
 /* ====================================================================== */
 
-.tabler-container {
+.table-container {
   width: 100%;
   overflow-x: auto; /* Enables horizontal scrolling on small mobile viewports */
   margin: 1rem 0;
@@ -263,8 +230,8 @@ button.toc-header {
   }
 
   th {
-    background-color: var(--lightgray); /* Slightly offset background for table headers */
-    color: var(--dark); 
+    background-color: var(--gray); /* Slightly offset background for table headers */
+    color: var(--light); 
     font-weight: 600;
     text-align: left;
   }
@@ -281,23 +248,7 @@ button.toc-header {
 }
 
 
-/* ====================================================================== */
-/* UNKOWN                                                                 */
-/* ====================================================================== */
 
-/* ---------- hero ---------- */
-.landing-title {
-  font-size: clamp(2.5rem, 9vw, 6rem);
-  line-height: 0.95;
-  margin: 0 0 1rem;
-  letter-spacing: -0.03em;
-}
-.landing-sub {
-  font-size: 1rem;
-  color: var(--gray);
-  margin-bottom: 4rem;
-  a { color: var(--secondary); }
-}
 
 /* ====================================================================== */
 /* CUSTOM WIDGETS: CARDS                                                  */
@@ -306,7 +257,7 @@ button.toc-header {
 .issue-grid {
   display: grid;
   /* 1. Kept auto-fill so cards stay exactly the size you designed */
-  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
   max-width: 100%;
   
@@ -397,10 +348,49 @@ button.toc-header {
 }
 
 
+/* ====================================================================== */
+/* CUSTOM WIDGET: MISCS                                                   */
+/* ====================================================================== */
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*  Infobox callout fix 2: Reset Quartz's default callout box styles specifically for ITS infoboxes */
+.callout[data-callout~="infobox"] {
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  
+  /* Retain grid and layout mechanics for child content elements */
+  & > .callout-content {
+    display: grid;
+    
+    & > :first-child {
+      margin-top: 0;
+    }
+  }
+}
 
 /* ====================================================================== */
-/* LITERAL FULL WIDTH FOR HOME PAGE                                       */
+/* PAGE RESIZE SO IT TAKES WHOLE SCREEN                                   */
 /* ====================================================================== */
+
+@media all and ($desktop) {
+  body div#quartz-root.page div#quartz-body {
+    width: min(100%, calc(#{map.get($breakpoints, desktop)} + 700px));
+    max-width: min(100%, calc(#{map.get($breakpoints, desktop)} + 700px));
+  }
+}
+
+
+
+/* LITERAL FULL WIDTH FOR HOME PAGE ------------------------------------- */
+
 
 body[data-slug="index"] {
   .sidebar,
@@ -436,34 +426,6 @@ body[data-slug="index"] {
     display: none !important;
   }
 
-}
-
-
-
-
-
-.center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/*  Infobox callout fix 2: Reset Quartz's default callout box styles specifically for ITS infoboxes */
-.callout[data-callout~="infobox"] {
-  border: none !important;
-  background-color: transparent !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
-  
-  /* Retain grid and layout mechanics for child content elements */
-  & > .callout-content {
-    display: grid;
-    
-    & > :first-child {
-      margin-top: 0;
-    }
-  }
 }
 
 
