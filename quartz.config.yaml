@@ -162,7 +162,7 @@ plugins:
   - source: "@quartz-community/search"
     enabled: true
     layout:
-      position: header
+      position: left # will in header once navber established
       priority: 20
       group: toolbar
       condition: not-index
@@ -181,7 +181,7 @@ plugins:
       priority: 10
       condition: not-index
   - source: "@quartz-community/content-meta"
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 500
@@ -200,14 +200,14 @@ plugins:
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
-      position: header
+      position: left # will in header once navber established
       priority: 30
       group: toolbar
       condition: not-index
   - source: "@quartz-community/reader-mode"
     enabled: true
     layout:
-      position: header
+      position: left # will in header once navber established
       priority: 35
       group: toolbar
       condition: not-index
@@ -291,7 +291,8 @@ plugins:
       limit: 10
       showTags: false
   - source: github:satche/quartz-navbar
-    enabled: true
+# @note set to false for now because i cant hecking find the culprit of why the left sidebar is gone at smaller viewport     
+    enabled: false 
     options:
       links:
         - label: Home
