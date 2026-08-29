@@ -65,7 +65,23 @@ def parse_sheet_to_html(ws):
                 hidden_cells.add((r, c))
                 
     # 2. Rebuild structural HTML lines cleanly cell by cell
+    # --- 2. Rebuild structural HTML lines cleanly cell by cell ---
     html_lines = ['<table class="tidy-table">']
+    
+    # NEW: Fetch the defined Multi-Row Header boundary from your Excel Name Box
+    max_header_row = 1 # Default fallback to row 1
+    if "Table_Headers" in ws.parent.defined_names:
+        # Get the range target (e.g., 'Sheet1'!$1:$2)
+        name_target = ws.parent.defined_names["Table_Headers"]
+        
+        # Extract the destination row boundaries
+        for title, coord in name_target.destinations:
+            if title == ws.title: # Make sure it matches the current sheet tab
+                # Parse boundaries from coordinates
+                min_col, min_row, max_col, max_row = openpyxl.utils.cell.range_boundaries(coord)
+                if max_row:
+                    max_header_row = max_row
+
     for r in range(1, ws.max_row + 1):
         html_lines.append('  <tr>')
         for c in range(1, ws.max_column + 1):
@@ -82,7 +98,10 @@ def parse_sheet_to_html(ws):
                 if colspan > 1: attrs.append(f'colspan="{colspan}"')
                     
             attr_str = " " + " ".join(attrs) if attrs else ""
-            tag = 'th' if r == 1 else 'td'
+            
+            # --- UPDATED HEADER CHECKER ---
+            # If the current row falls within your named header rows, make it a <th>
+            tag = 'th' if r <= max_header_row else 'td'
             
             escaped_val = str(val).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
             html_lines.append(f'    <{tag}{attr_str}>{escaped_val}</{tag}>')
@@ -90,6 +109,7 @@ def parse_sheet_to_html(ws):
         
     html_lines.append('</table>')
     return "\n".join(html_lines)
+
 
 
 def run_single_job_pipeline(job, global_settings):
