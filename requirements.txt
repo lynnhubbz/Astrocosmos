@@ -1,10 +1,10 @@
 ﻿ipykernel==7.2.0
 nbconvert==7.17.1
 nbformat==5.11.1
-nbstripout
+nbstripout==0.9.1
 openpyxl==3.1.5
 pipreqsnb==0.2.4
-pydantic==2.13.4
+pydantic==2.13.5
 PyYAML==6.0.3
 roman==5.2
 watchdog==6.0.0
