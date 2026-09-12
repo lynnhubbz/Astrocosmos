@@ -1,1 +1,0 @@
-../article/directory_structure.md
