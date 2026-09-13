@@ -124,4 +124,4 @@ The Code of Conduct governs participation in the community.
 1. [DEFINITIONS](DEFINITIONS.md)
 2. [CONTRIBUTING](CONTRIBUTING.md)
 3. [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md)
-4. [FAQ regarding legal documents](legal-faq.md)
+4. [FAQ regarding legal documents](./faq/legal.md)

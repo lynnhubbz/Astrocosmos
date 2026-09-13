@@ -1,7 +1,9 @@
 # Frequently or Probably Asked Questions
 
+## Legal Documents
+
 ##### Q: "What if i already pour my sweat in this and someone make profit from it by making a game?"
 
 **A:**
-Well, you can make your own game (like, politely) using others work too.
+Well, you can make your own game (like, saying this politely) using others work too.
 You can make your own novel set in Astrocosmos universe and sell it. All Rights Reserved to you.
