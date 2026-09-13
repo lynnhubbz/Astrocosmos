@@ -7,8 +7,6 @@ tags: []
 
 Space Vehicles (_or often generally and inclusively called "Spaceships"_) are vehicle that do not have ground-contact as its primary movement component
 
-<!-- <https://starwars.fandom.com/wiki/Starship> -->
-
 ## History
 
 ---
