@@ -31,6 +31,19 @@ Write the content in omniscient first then perspective second. write perspectiva
 
 Be sure to fullfill the criteria stated in [...]
 
+### Science Hierarchy (BRAINSTORM)
+
+Science/philosophy that doesnt mentioned explicitly will default/refer to real life counterpart
+
+~~~mermaid
+flowchart TD
+    subgraph A ["World Rules/Fact"]
+        direction TD
+        subgraph B ["Real Life Science"]
+        end
+    end
+~~~
+
 ### Writing Syntaxes
 
 Please refer to [this guide about syntaxes here](syntaxes.md#markdown)

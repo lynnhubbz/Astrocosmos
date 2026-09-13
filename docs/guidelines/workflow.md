@@ -144,17 +144,6 @@ flowchart TD
     classDef canonical fill:#eeeeee,stroke:#666,color:#000;
 ~~~
 
-## Science Hierarchy (BRAINSTORM)
-
-~~~mermaid
-flowchart TD
-    subgraph A ["World Rules/Fact"]
-        direction TD
-        subgraph B ["Real Life Science"]
-        end
-    end
-~~~
-
 ## Making template and how tempalte is used
 
 ~~~mermaid

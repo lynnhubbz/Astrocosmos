@@ -1,6 +1,8 @@
 # Decisions on file formats
 
-## Cnsdireation
+## Cosdireation
+
+A universally and widely used file format. Easy to use
 
 ## Decisions
 

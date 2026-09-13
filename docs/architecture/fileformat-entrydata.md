@@ -1,7 +1,8 @@
 # Entry Data - Architecture Decision Record
 Status: Accepted (pending your confirmation)
 
-Should the detailed data be separated as different file or compacted as one file? Which one is the source of truth?
+Should the detailed data be separated as different file or compacted as one file? 
+Which one is the source of truth?
 
 ## Consideration
 

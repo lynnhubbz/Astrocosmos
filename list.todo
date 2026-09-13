@@ -22,8 +22,8 @@ Research:
 ☐ Make ASTROCOSMOS project and its workflow available for non-programmers
 ☐ Badges for quick navigation
 ☐ Define usage of folders clearly
-    ☐ templates = "what you write"
-    ☐ guidelines/content = "how you write / submit"
+    ✔ templates or authoring = "what you write" @done (9/13/2026, 9:17:16 AM)
+    ✔ guidelines/content = "how you write / submit" @done (9/13/2026, 9:17:17 AM)
 ☐ How can we use antivirus on pull requests?
 ☐ Emojize documents
 ☐ Embed mermaid js file in markdown
@@ -40,7 +40,7 @@ Research:
         ☐ Sync script (must also fix internal links)
 
 Template:
-    ☐ Separate script for pydantic vs calculation (reusability)
+    ☐ Separate script for pydantic (data vs prose) vs calculation (reusability)
     ☐ Make in-class json and toml
 
 ☐ Connected Navbar & Explorer (mirrored nav/explorer tree)
