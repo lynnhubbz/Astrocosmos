@@ -9,17 +9,16 @@ export function toPosixPath(fp: string): string {
 export async function glob(
   pattern: string,
   cwd: string,
-  ignorePatterns: [
-    "content/"
-  ],
+  ignorePatterns: string[],
+  gitignore = true,
+  ignoreFiles?: string | readonly string[],
 ): Promise<FilePath[]> {
   const fps = (
     await globby(pattern, {
       cwd,
       ignore: ignorePatterns,
-// @note : make somethign like an exception list for this, because Quartz cant read content/ because it is gitignored
-// for now, gitignore will remain false. default=true
-      gitignore: false, 
+      gitignore,
+      ignoreFiles,
     })
   ).map(toPosixPath)
   return fps as FilePath[]
