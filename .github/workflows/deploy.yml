@@ -20,7 +20,7 @@ jobs:
       - name: Checkout Quartz Engine
         uses: actions/checkout@v6
         with:
-          ref: quartz-test
+          ref: 'site/temp'
 
       - name: Checkout content from main branch
         uses: actions/checkout@v6
