@@ -3,7 +3,7 @@ name: Trigger Deploy from Quartz Engine
 on:
   push:
     branches:
-      - quartz-test # currently use the `quartz-test` branch
+      - 'site/temp'
   workflow_dispatch:
 
 permissions:
