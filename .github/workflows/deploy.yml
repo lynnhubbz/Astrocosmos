@@ -1,3 +1,5 @@
+# @note : this file is duplicated on `main` and `site/temp`. Edit both.
+
 name: Quartz Build and Deploy
 
 on:
@@ -28,13 +30,6 @@ jobs:
           ref: main
           path: main-branch
           fetch-depth: 0
-
-      - name: Debug copied content
-        run: |
-          ls -la main-branch
-          ls -la main-branch/content
-          find main-branch/content -maxdepth 2 -type f | sort
-          find content -maxdepth 2 -type f | sort
 
       - name: Prepare content directory
         run: |
