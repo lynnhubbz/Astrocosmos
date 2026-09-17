@@ -5,14 +5,15 @@ Follow up of the separataion of Chronology section
 
 What will the the separated file contains?
 
+Main Heading = `## Chronology` `## Culture` etc.
 ## Consideration
 
 Drivers, Requirements, Principles
 
 ## Available Options
 
-1. Headings be put inside the separated file
-2. Headings be put inside the main file
+1. Main Heading be put inside the separated file
+2. Main Heading be put inside the main file
 
 ## Decision
 
