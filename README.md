@@ -1,16 +1,17 @@
-# Astrocosmos
+# Quartz v5
 
-This repository aim to host information about a worldbuilding project. 
-Therefore, src is not just to store code, but also the documents of this world
+> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
-This also act as a database which will be used for upcoming space renderer
+Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
 
-## Open World
+🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
 
-Non-official submissionn will considered to be not affecting the main timeline
+[Join the Discord Community](https://discord.gg/cRFFHYye7t)
 
-## Compatibility
+## Sponsors
 
-This repo is compatible with various worldbuilding programs, of course with some issues
-
-- Chronicler
+<p align="center">
+  <a href="https://github.com/sponsors/jackyzha0">
+    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
+  </a>
+</p>

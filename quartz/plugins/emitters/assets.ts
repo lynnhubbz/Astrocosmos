@@ -24,7 +24,7 @@ const filesToCopy = async (argv: Argv, cfg: QuartzConfig, excludeExtensions: Set
   for (const ext of excludeExtensions) {
     excludePatterns.push(`**/*${ext}`)
   }
-  return await glob("**", argv.directory, excludePatterns, false, ".gitignore")
+  return await glob("**", argv.directory, excludePatterns, false, ".gitignore") // @note fix gitignore
 }
 
 const copyFile = async (argv: Argv, fp: FilePath) => {
